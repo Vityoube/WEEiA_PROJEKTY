@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Sub0" numsamples="1000">
+	<nodes>
+		<cpt id="Disease">
+			<state id="absent" />
+			<state id="present" />
+			<probabilities>0.999 0.001</probabilities>
+		</cpt>
+		<cpt id="Test">
+			<state id="negative" />
+			<state id="positive" />
+			<parents>Disease</parents>
+			<probabilities>0.95 0.05 0.02 0.98</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" name="Disease-Test network" faultnameformat="nodestate">
+			<comment>This simple network is useful in demonstrating the simplest possible application of Bayes theorem.\nThe thing that surprises most students is that the posterior probability of the disease after observing a positive test result is still very low (around 0.02). Most people expect a high posterior given high sensitivity and specificity of the test.</comment>
+			<node id="Disease">
+				<name>Disease</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>36 17 112 53</position>
+			</node>
+			<node id="Test">
+				<name>Test</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>36 98 112 134</position>
+			</node>
+			<textbox>
+				<caption>This simple network is useful in demonstrating the simplest possible application of Bayes theorem.</caption>
+				<font color="3366ff" name="Arial" size="10" bold="true" />
+				<position>130 24 271 120</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

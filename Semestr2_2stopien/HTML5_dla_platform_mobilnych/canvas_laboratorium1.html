@@ -1,0 +1,49 @@
+<script>
+
+	var canvas;
+	var ctx;
+
+	function init(){
+		canvas = document.getElementById("canvas");
+		ctx = canvas.getContext("2d");
+		draw();
+	}
+	
+	function draw(){
+		ctx.fillStyle="#4295f4";
+		ctx.rect(100,100,100,100);
+		ctx.strokeStyle="#42f462";
+		ctx.fill();
+		ctx.stroke();
+		ctx.save();
+		
+
+		
+		ctx.beginPath();
+		ctx.fillStyle="#2e302f";
+		ctx.strokeStyle="#63bae2";	
+		ctx.scale(2,1);				
+		ctx.arc(150,150,50,0,Math.PI*2,false);	
+		ctx.closePath();
+		ctx.fill();	
+		ctx.stroke();
+
+		ctx.restore();
+		ctx.fillStyle="#42f462";
+		ctx.strokeStyle="#2761ba";
+		ctx.beginPath();		
+		ctx.rect(400,100,100,100);		
+		ctx.closePath();
+		ctx.fill();
+		ctx.stroke();
+		ctx.save();
+		
+		
+							
+		
+	}
+	
+	window.addEventListener("load",init,false);
+</script>
+
+<canvas id="canvas" width="800" height="600" />

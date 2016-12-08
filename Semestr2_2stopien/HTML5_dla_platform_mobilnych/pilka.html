@@ -1,0 +1,51 @@
+<!-- <html>
+<head></head>
+<body> -->
+    <style>
+      html {
+        background: url(http://fullhdpictures.com/wp-content/uploads/2016/01/Grass-HD-Wallpaper.jpg) no-repeat center;
+        -moz-background-size: cover;
+        background-size: cover;
+        min-width: 70%;
+        min-height: 70%;
+      }
+      .pilka {
+        position: relative;
+        top: 0%;
+        left: -3%;
+      }
+      .move {
+        animation: moveX 3s;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      div {
+        animation-name: moveY;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes moveX{
+          100% {
+              left: 93%;
+              transform: rotate(2160deg);
+            }
+      }
+
+      @keyframes moveY{
+        0%{
+          transform: translateY(0%);
+        }
+        100% {
+          transform: translateY(400%);
+        }
+      }
+      </style>
+      <div id="axis">
+        <img class="pilka move" src="http://findicons.com/files/icons/638/magic_people/128/magic_ball.png"/>
+      </div>
+  <!-- </body>
+</html> -->

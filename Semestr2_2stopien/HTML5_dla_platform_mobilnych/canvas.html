@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<style type="text/css">
+body {
+    margin: 0;
+    height: 100%;
+}
+</style>
+<script type="text/javascript">
+
+      var canvas;
+      var ctx;
+
+      function init(){
+        canvas=document.getElementById("field");
+        ctx=field.getContext("2d");
+        draw();
+      }
+
+      function draw(){
+        ctx.fillStyle="rgba(0,255,0,1)";
+        ctx.fillRect(0,0,300,300);
+
+        var centerX = 450;
+        var centerY = 150;
+        var radius = 150;
+
+        ctx.save();
+
+        ctx.translate(canvas/4,canvas/4);
+
+        ctx.beginPath();
+	      ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+
+        ctx.restore();
+
+	      // apply styling
+	      ctx.fillStyle = 'yellow';
+	      ctx.fill();
+
+      }
+      window.addEventListener("load",init,false);
+  </script>
+  </head>
+  <body>
+    <canvas id="field" width="640" height="480"></canvas>
+  </body>
+
+</html>

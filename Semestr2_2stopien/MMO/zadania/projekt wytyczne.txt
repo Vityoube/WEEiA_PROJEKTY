@@ -1,0 +1,8 @@
+1.Sprawdzenie funkcji celu to jest czy funkcja spe³nia zbiór dopuszczalnych rozwi¹zañ ( nie dla wszystkich ograniczeñ na raz ) dalej sprawdzamy pozosta³e ograniczenia.
+2.Etykietowanie cech ( nadanie wag)
+3.Problem klasyfikacji (sortowania) - podzia³ zbioru  na podzbiory, zgodnie z ustalonymi normami okreœlonymi na
+podstawie zbioru kryteriów  
+4.Problem wyboru - okreœlenie podzbioru najlepszych wariantów ze zbioru  z punktu widzenia zbioru kryteriów
+5.Uszeregowanie wszystkich wariantów ze zbioru
+6. U¿ycie okreœlonej metryki odleg³oœciowej (miara odleg³oœci miêdzy dwoma punktami)
+7.Optymalizacja – d¹¿enie do znalezienia wariantu, ocenianego wed³ug ustalonego kryterium wyboru, jako najlepszy spoœród wariantów uznanych za dopuszczalne

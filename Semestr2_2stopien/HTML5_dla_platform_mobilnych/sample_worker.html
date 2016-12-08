@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+
+<script type="text/javascript">
+	
+var worker = new Worker("kod.js");
+
+function init ()
+{
+	console.log("hello world");
+}
+
+
+worker.addEventListener('message', 
+				function(e) 
+				{
+			  		console.log('Worker said: ', e.data);
+			  	},
+ false);
+
+worker.postMessage('Hello World'); // Send data to our worker.
+
+window.addEventListener("load", init, false); 
+
+</script>
+
+
+</body>
+
+</html>

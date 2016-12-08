@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;favicon.ico&apos; to &apos;WebContent&apos;" description="Move &apos;favicon.ico&apos; to &apos;WebContent&apos;" destination="WebContent" element1="favicon.ico" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1481056636525" updateReferences="true"/>
+</session>

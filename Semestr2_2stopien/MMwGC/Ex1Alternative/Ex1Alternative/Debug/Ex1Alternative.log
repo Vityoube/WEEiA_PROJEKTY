@@ -1,0 +1,8 @@
+﻿  Window.cpp
+c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1alternative\ex1alternative\window.cpp(30): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1alternative\ex1alternative\window.cpp(52): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1alternative\ex1alternative\window.cpp(53): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1alternative\ex1alternative\window.cpp(75): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Ex1Alternative.vcxproj -> C:\Users\Viktor\Documents\WEEiaA_projekty\Semestr2_2stopien\MMwGC\Ex1Alternative\Debug\Ex1Alternative.exe
+  Ex1Alternative.vcxproj -> C:\Users\Viktor\Documents\WEEiaA_projekty\Semestr2_2stopien\MMwGC\Ex1Alternative\Debug\Ex1Alternative.pdb (Full PDB)

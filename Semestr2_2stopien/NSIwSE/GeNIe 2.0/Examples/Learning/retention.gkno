@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<knowledge version="1.0">
+	<tier index="0" width="320" />
+	<tier index="1" width="160" />
+	<tier index="2" width="160" />
+	<tier index="3" width="160" />
+	<variable id="spend" position="10 20 82 56" />
+	<variable id="apret" position="10 61 82 97" />
+	<variable id="top10" tier="1" position="36 184 108 220" />
+	<variable id="rejr" position="10 143 82 179" />
+	<variable id="tstsc" position="224 96 296 132" />
+	<variable id="pacc" position="10 225 82 261" />
+	<variable id="strat" position="10 266 82 302" />
+	<variable id="salar" position="171 227 243 263" />
+	<force from="tstsc" to="top10" />
+	<forbid from="tstsc" to="salar" />
+</knowledge>

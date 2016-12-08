@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="NoisyOR" numsamples="1000">
+	<nodes>
+		<cpt id="LiverCancer">
+			<state id="Cancer" />
+			<state id="NoCancer" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="HepatitisB">
+			<state id="Present" />
+			<state id="Absent" />
+			<probabilities>0.05 0.95</probabilities>
+		</cpt>
+		<noisymax id="Jaundice">
+			<state id="Severe" />
+			<state id="Moderate" />
+			<state id="None" />
+			<parents>LiverCancer HepatitisB</parents>
+			<strengths>0 1 0 1</strengths>
+			<parameters>0.2929292929292929 0.06877283473028151 0.6382978723404256 0 0 1 0.09090909090909083 0.1644100580270793 0.7446808510638298 0 0 1 0.01000000000000001 0.05000000000000004 0.94</parameters>
+		</noisymax>
+		<cpt id="EquipmentFailure">
+			<state id="Failure" />
+			<state id="NoFailure" />
+			<probabilities>0.02 0.98</probabilities>
+		</cpt>
+		<cpt id="HumanError">
+			<state id="Error" />
+			<state id="NoError" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<noisymax id="Accident">
+			<state id="NoAccident" />
+			<state id="Accident" />
+			<parents>EquipmentFailure HumanError</parents>
+			<strengths>1 0 1 0</strengths>
+			<parameters>0.1919191919191918 0.8080808080808082 0 1 0.09090909090909083 0.9090909090909092 0 1 0.01000000000000001 0.99</parameters>
+		</noisymax>
+	</nodes>
+	<extensions>
+		<genie version="1.0" name="Noisy OR and Noisy AND example networks." faultnameformat="nodestate">
+			<comment>This is a tutorial model demonstrating use of Noisy-OR and Noisy-AND nodes in GeNIe.</comment>
+			<node id="LiverCancer">
+				<name>Liver Cancer</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>16 29 92 65</position>
+			</node>
+			<node id="HepatitisB">
+				<name>Hepatitis B</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>105 29 179 65</position>
+			</node>
+			<node id="Jaundice">
+				<name>Jaundice</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>60 109 136 145</position>
+			</node>
+			<node id="EquipmentFailure">
+				<name>Equipment Failure</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>384 31 487 67</position>
+			</node>
+			<node id="HumanError">
+				<name>Human Error</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>491 31 578 67</position>
+			</node>
+			<node id="Accident">
+				<name>Accident</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>432 113 508 149</position>
+			</node>
+			<textbox>
+				<caption>This is a tutorial model demonstrating use of Noisy-OR and Noisy-AND nodes in GeNIe.</caption>
+				<font color="3366ff" name="Arial" size="10" bold="true" />
+				<position>202 55 356 119</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

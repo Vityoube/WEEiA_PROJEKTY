@@ -1,0 +1,7 @@
+﻿  Window.cpp
+Window.cpp(29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Window.cpp(51): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Window.cpp(52): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Window.cpp(74): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Ex1Alternative.obj : error LNK2001: unresolved external symbol "public: static struct GLFWwindow * Window::window" (?window@Window@@2PAUGLFWwindow@@A)
+C:\Users\Viktor\Documents\WEEiaA_projekty\Semestr2_2stopien\MMwGC\Ex1Alternative\Release\Ex1Alternative.exe : fatal error LNK1120: 1 unresolved externals

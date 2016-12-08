@@ -1,0 +1,271 @@
+Indeks;Wiek;P³eæ;Rodzaj bólu w klatce;Ciœnienie spoczynkowe krwi;Cholesterol w surowicy w mg / dl;Cukier we krwi na czczo > 120 mg / dl;Rezultat ekokardiogramu (spoczynkowy);Maksymalne têtno;Czy æwiczenia prowadz¹ do dusznicy?;Obni¿enia odcinka ST wywo³ane wysi³kiem w stosunku do reszty fali;Nachylenie szczytowego odcinka ST podczas wysi³ku;Liczba du¿ych naczyñ (0-3);Diagnoza;Stan faktyczny
+1;w_4_61_up;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;2,4;2;3;Pozytywna;Wystêpuje choroba serca
+2;w_4_61_up;kobieta;bóle niedusznicowe;cis_1_below_120;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;1,6;2;0;Trwa³e uszkodzenie serca;Brak choroby serca
+3;w_3_55_61;mê¿czyzna;nietypowa dusznica;cis_2_120_130;chol_3_245_281;nie;w normie;mak_2_133_154;nie;0,3;1;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+4;w_4_61_up;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_3_245_281;nie;w normie;mak_1_below_133;tak;0,2;2;1;Trwa³e uszkodzenie serca;Brak choroby serca
+5;w_4_61_up;kobieta;nietypowa dusznica;cis_2_120_130;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;0,2;1;1;Pozytywna;Brak choroby serca
+6;w_4_61_up;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_1_below_213;nie;w normie;mak_2_133_154;nie;0,4;1;0;Trwa³e uszkodzenie serca;Brak choroby serca
+7;w_3_55_61;mê¿czyzna;bóle niedusznicowe;cis_3_130_140;chol_3_245_281;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;0,6;2;1;Ustalono wadê serca;Wystêpuje choroba serca
+8;w_3_55_61;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;1,2;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+9;w_3_55_61;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;1,2;2;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+10;w_4_61_up;kobieta;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;4;2;3;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+11;w_3_55_61;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_2_213_245;nie;w normie;mak_3_154_166;nie;0,5;2;0;Trwa³e uszkodzenie serca;Brak choroby serca
+12;w_2_48_55;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;0;1;0;Trwa³e uszkodzenie serca;Brak choroby serca
+13;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+14;w_4_61_up;mê¿czyzna;typowa dusznica;cis_3_130_140;chol_2_213_245;nie;w normie;mak_2_133_154;nie;2,6;2;2;Pozytywna;Wystêpuje choroba serca
+15;w_3_55_61;kobieta;bezobjawowe;cis_2_120_130;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;0;1;1;Pozytywna;Brak choroby serca
+16;w_4_61_up;kobieta;bezobjawowe;cis_1_below_120;chol_1_below_213;nie;w normie;mak_1_below_133;nie;1,6;2;0;Pozytywna;Brak choroby serca
+17;w_1_below_48;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;w normie;mak_1_below_133;tak;1,8;2;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+18;w_2_48_55;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_1_below_213;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;tak;3,1;3;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+19;w_4_61_up;mê¿czyzna;typowa dusznica;cis_1_below_120;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;1,8;2;0;Pozytywna;Brak choroby serca
+20;w_1_below_48;mê¿czyzna;typowa dusznica;cis_4_140_up;chol_1_below_213;nie;w normie;mak_4_166_up;tak;1,4;1;0;Trwa³e uszkodzenie serca;Brak choroby serca
+21;w_4_61_up;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;2,6;2;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+22;w_2_48_55;mê¿czyzna;nietypowa dusznica;cis_3_130_140;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0,2;2;0;Pozytywna;Brak choroby serca
+23;w_1_below_48;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_4_281_up;nie;w normie;mak_4_166_up;nie;1,2;2;0;Pozytywna;Brak choroby serca
+24;w_1_below_48;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_1_below_213;nie;w normie;mak_2_133_154;nie;0,1;1;0;Pozytywna;Brak choroby serca
+25;w_2_48_55;kobieta;nietypowa dusznica;cis_3_130_140;chol_4_281_up;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;tak;0;1;1;Pozytywna;Brak choroby serca
+26;w_2_48_55;kobieta;bóle niedusznicowe;cis_3_130_140;chol_3_245_281;nie;w normie;mak_2_133_154;nie;0,2;1;0;Pozytywna;Brak choroby serca
+27;w_1_below_48;kobieta;bezobjawowe;cis_3_130_140;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;0;2;0;Pozytywna;Brak choroby serca
+28;w_2_48_55;kobieta;bóle niedusznicowe;cis_2_120_130;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;0,6;1;0;Pozytywna;Brak choroby serca
+29;w_3_55_61;mê¿czyzna;bóle niedusznicowe;cis_1_below_120;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;2,5;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+30;w_4_61_up;kobieta;bóle niedusznicowe;cis_1_below_120;chol_3_245_281;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;0;1;1;Pozytywna;Brak choroby serca
+31;w_3_55_61;mê¿czyzna;bóle niedusznicowe;cis_2_120_130;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;0,4;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+32;w_4_61_up;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;2,3;1;0;Ustalono wadê serca;Brak choroby serca
+33;w_1_below_48;kobieta;bóle niedusznicowe;cis_2_120_130;chol_2_213_245;nie;w normie;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+34;w_3_55_61;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;3,4;3;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+35;w_2_48_55;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;0,9;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+36;w_2_48_55;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_3_245_281;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;0;1;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+37;w_4_61_up;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;1,9;1;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+38;w_3_55_61;mê¿czyzna;typowa dusznica;cis_4_140_up;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;0;1;0;Pozytywna;Wystêpuje choroba serca
+39;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_3_130_140;chol_1_below_213;nie;w normie;mak_2_133_154;nie;0;1;0;Pozytywna;Brak choroby serca
+40;w_2_48_55;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+41;w_1_below_48;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_2_213_245;nie;w normie;mak_4_166_up;nie;0;1;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+42;w_4_61_up;kobieta;bezobjawowe;cis_2_120_130;chol_1_below_213;nie;w normie;mak_3_154_166;nie;0;1;0;Pozytywna;Brak choroby serca
+43;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_3_130_140;chol_2_213_245;nie;w normie;mak_4_166_up;tak;0,4;1;0;Pozytywna;Brak choroby serca
+44;w_1_below_48;mê¿czyzna;nietypowa dusznica;cis_1_below_120;chol_1_below_213;tak;w normie;mak_3_154_166;nie;0;1;0;Trwa³e uszkodzenie serca;Brak choroby serca
+45;w_3_55_61;mê¿czyzna;bóle niedusznicowe;cis_2_120_130;chol_2_213_245;tak;w normie;mak_2_133_154;nie;2,2;2;1;Ustalono wadê serca;Wystêpuje choroba serca
+46;w_3_55_61;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_1_below_213;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;0;1;0;Pozytywna;Brak choroby serca
+47;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_1_below_120;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;0,8;1;3;Pozytywna;Wystêpuje choroba serca
+48;w_1_below_48;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;1;Pozytywna;Wystêpuje choroba serca
+49;w_4_61_up;mê¿czyzna;nietypowa dusznica;cis_4_140_up;chol_3_245_281;nie;w normie;mak_1_below_133;tak;0;2;3;Ustalono wadê serca;Wystêpuje choroba serca
+50;w_4_61_up;kobieta;bezobjawowe;cis_4_140_up;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;1;2;3;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+51;w_1_below_48;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_4_281_up;nie;w normie;mak_1_below_133;tak;1,8;2;0;Ustalono wadê serca;Wystêpuje choroba serca
+52;w_2_48_55;mê¿czyzna;nietypowa dusznica;cis_2_120_130;chol_1_below_213;tak;w normie;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+53;w_4_61_up;kobieta;bóle niedusznicowe;cis_4_140_up;chol_4_281_up;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;0,8;1;1;Pozytywna;Brak choroby serca
+54;w_4_61_up;kobieta;nietypowa dusznica;cis_4_140_up;chol_1_below_213;nie;w normie;mak_4_166_up;nie;0;1;2;Pozytywna;Brak choroby serca
+55;w_1_below_48;kobieta;nietypowa dusznica;cis_3_130_140;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0,6;2;0;Pozytywna;Brak choroby serca
+56;w_1_below_48;kobieta;nietypowa dusznica;cis_1_below_120;chol_1_below_213;nie;w normie;mak_4_166_up;nie;0;1;1;Pozytywna;Brak choroby serca
+57;w_4_61_up;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;3,6;2;1;Pozytywna;Wystêpuje choroba serca
+58;w_3_55_61;kobieta;bóle niedusznicowe;cis_2_120_130;chol_1_below_213;tak;w normie;mak_1_below_133;nie;0;1;0;Pozytywna;Brak choroby serca
+59;w_3_55_61;kobieta;bezobjawowe;cis_4_140_up;chol_3_245_281;nie;w normie;mak_2_133_154;tak;0;2;0;Pozytywna;Wystêpuje choroba serca
+60;w_4_61_up;mê¿czyzna;nietypowa dusznica;cis_2_120_130;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;1,4;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+61;w_3_55_61;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_1_below_213;tak;w normie;mak_4_166_up;nie;0,2;1;1;Trwa³e uszkodzenie serca;Brak choroby serca
+62;w_2_48_55;kobieta;bezobjawowe;cis_3_130_140;chol_4_281_up;nie;w normie;mak_2_133_154;tak;1,2;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+63;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_2_120_130;chol_2_213_245;nie;w normie;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+64;w_3_55_61;kobieta;typowa dusznica;cis_4_140_up;chol_2_213_245;nie;w normie;mak_4_166_up;nie;0,9;1;0;Pozytywna;Brak choroby serca
+65;w_4_61_up;mê¿czyzna;typowa dusznica;cis_4_140_up;chol_2_213_245;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;2,3;3;0;Ustalono wadê serca;Brak choroby serca
+66;w_3_55_61;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;0,6;2;1;Ustalono wadê serca;Wystêpuje choroba serca
+67;w_2_48_55;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;tak;0;1;0;Pozytywna;Brak choroby serca
+68;w_3_55_61;kobieta;nietypowa dusznica;cis_3_130_140;chol_4_281_up;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;0;1;2;Pozytywna;Wystêpuje choroba serca
+69;w_1_below_48;kobieta;bóle niedusznicowe;cis_1_below_120;chol_2_213_245;nie;w normie;mak_2_133_154;nie;0,3;2;1;Pozytywna;Brak choroby serca
+70;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_1_below_120;chol_2_213_245;nie;w normie;mak_2_133_154;nie;0;1;0;Pozytywna;Wystêpuje choroba serca
+71;w_4_61_up;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_3_245_281;nie;w normie;mak_2_133_154;tak;3,6;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+72;w_3_55_61;kobieta;bezobjawowe;cis_2_120_130;chol_4_281_up;nie;w normie;mak_3_154_166;tak;0,6;1;0;Pozytywna;Brak choroby serca
+73;w_4_61_up;mê¿czyzna;nietypowa dusznica;cis_4_140_up;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;0;1;0;Pozytywna;Brak choroby serca
+74;w_4_61_up;kobieta;bóle niedusznicowe;cis_4_140_up;chol_1_below_213;nie;nieprawid³owoœci fali ST-T (np. uniesienie lub obni¿enie ST> 0,05 mV)    ;mak_1_below_133;nie;1,1;2;0;Pozytywna;Brak choroby serca
+75;w_4_61_up;kobieta;bezobjawowe;cis_1_below_120;chol_2_213_245;nie;w normie;mak_2_133_154;nie;0,3;1;2;Pozytywna;Brak choroby serca
+76;w_1_below_48;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;0;2;3;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+77;w_1_below_48;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;3;2;0;Pozytywna;Brak choroby serca
+78;w_1_below_48;kobieta;bóle niedusznicowe;cis_1_below_120;chol_1_below_213;nie;w normie;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+79;w_1_below_48;kobieta;bóle niedusznicowe;cis_2_120_130;chol_1_below_213;nie;w normie;mak_4_166_up;nie;0;2;0;Pozytywna;Brak choroby serca
+80;w_3_55_61;mê¿czyzna;nietypowa dusznica;cis_2_120_130;chol_2_213_245;nie;w normie;mak_4_166_up;nie;0,8;1;0;Pozytywna;Brak choroby serca
+81;w_3_55_61;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_2_213_245;nie;w normie;mak_1_below_133;nie;2;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+82;w_1_below_48;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_1_below_213;nie;w normie;mak_1_below_133;tak;1,6;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+83;w_3_55_61;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;0,8;1;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+84;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_3_130_140;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;2;2;0;Pozytywna;Brak choroby serca
+85;w_3_55_61;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_1_below_213;nie;w normie;mak_1_below_133;tak;1,5;2;0;Ustalono wadê serca;Brak choroby serca
+86;w_1_below_48;mê¿czyzna;typowa dusznica;cis_4_140_up;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0,8;1;2;Pozytywna;Brak choroby serca
+87;w_4_61_up;mê¿czyzna;nietypowa dusznica;cis_2_120_130;chol_1_below_213;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;0;1;0;Pozytywna;Brak choroby serca
+88;w_3_55_61;mê¿czyzna;typowa dusznica;cis_4_140_up;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;4,2;3;0;Trwa³e uszkodzenie serca;Brak choroby serca
+89;w_1_below_48;kobieta;nietypowa dusznica;cis_2_120_130;chol_4_281_up;nie;w normie;mak_3_154_166;nie;0;1;0;Pozytywna;Brak choroby serca
+90;w_2_48_55;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;2,6;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+91;w_3_55_61;mê¿czyzna;nietypowa dusznica;cis_4_140_up;chol_2_213_245;nie;w normie;mak_3_154_166;tak;0;1;0;Pozytywna;Brak choroby serca
+92;w_4_61_up;kobieta;bezobjawowe;cis_3_130_140;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;0;Pozytywna;Wystêpuje choroba serca
+93;w_2_48_55;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;2,2;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+94;w_2_48_55;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;0;2;1;Pozytywna;Wystêpuje choroba serca
+95;w_2_48_55;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_1_below_213;nie;w normie;mak_4_166_up;nie;1;1;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+96;w_1_below_48;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;1;2;1;Pozytywna;Wystêpuje choroba serca
+97;w_4_61_up;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;0,4;2;0;Pozytywna;Brak choroby serca
+98;w_3_55_61;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_2_213_245;nie;w normie;mak_3_154_166;nie;0,1;1;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+99;w_4_61_up;kobieta;bóle niedusznicowe;cis_4_140_up;chol_4_281_up;nie;w normie;mak_2_133_154;nie;0,2;1;0;Trwa³e uszkodzenie serca;Brak choroby serca
+100;w_2_48_55;kobieta;nietypowa dusznica;cis_2_120_130;chol_2_213_245;nie;w normie;mak_3_154_166;nie;1,1;1;0;Pozytywna;Brak choroby serca
+101;w_1_below_48;kobieta;bóle niedusznicowe;cis_1_below_120;chol_1_below_213;nie;w normie;mak_4_166_up;nie;0,6;2;0;Pozytywna;Brak choroby serca
+102;w_4_61_up;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_2_213_245;nie;w normie;mak_1_below_133;nie;1;2;0;Pozytywna;Wystêpuje choroba serca
+103;w_2_48_55;kobieta;bezobjawowe;cis_3_130_140;chol_3_245_281;nie;w normie;mak_3_154_166;nie;0;1;0;Pozytywna;Brak choroby serca
+104;w_3_55_61;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_4_281_up;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;1;2;3;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+105;w_4_61_up;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;1,4;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+106;w_2_48_55;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0,5;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+107;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_1_below_120;chol_2_213_245;nie;w normie;mak_2_133_154;tak;1,2;2;0;Pozytywna;Brak choroby serca
+108;w_3_55_61;kobieta;bezobjawowe;cis_4_140_up;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;2,6;2;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+109;w_3_55_61;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_1_below_213;nie;w normie;mak_3_154_166;tak;0;1;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+110;w_1_below_48;kobieta;nietypowa dusznica;cis_1_below_120;chol_1_below_213;nie;w normie;mak_2_133_154;nie;0;2;0;Pozytywna;Brak choroby serca
+111;w_3_55_61;kobieta;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;nieprawid³owoœci fali ST-T (np. uniesienie lub obni¿enie ST> 0,05 mV)    ;mak_1_below_133;tak;3,4;2;0;Pozytywna;Wystêpuje choroba serca
+112;w_1_below_48;mê¿czyzna;nietypowa dusznica;cis_1_below_120;chol_2_213_245;nie;w normie;mak_2_133_154;nie;0;1;0;Pozytywna;Brak choroby serca
+113;w_3_55_61;kobieta;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;0;1;0;Pozytywna;Wystêpuje choroba serca
+114;w_2_48_55;kobieta;bóle niedusznicowe;cis_3_130_140;chol_4_281_up;tak;w normie;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+115;w_1_below_48;mê¿czyzna;nietypowa dusznica;cis_2_120_130;chol_4_281_up;nie;w normie;mak_3_154_166;nie;0;1;0;Pozytywna;Brak choroby serca
+116;w_2_48_55;kobieta;nietypowa dusznica;cis_3_130_140;chol_3_245_281;nie;w normie;mak_3_154_166;nie;0;2;0;Pozytywna;Brak choroby serca
+117;w_1_below_48;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;0,8;1;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+118;w_3_55_61;kobieta;bezobjawowe;cis_4_140_up;chol_4_281_up;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;4;3;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+119;w_4_61_up;kobieta;typowa dusznica;cis_4_140_up;chol_2_213_245;nie;w normie;mak_1_below_133;nie;2,6;3;0;Pozytywna;Brak choroby serca
+120;w_3_55_61;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_4_281_up;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;1,6;3;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+121;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_2_120_130;chol_1_below_213;nie;w normie;mak_2_133_154;nie;2;2;3;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+122;w_2_48_55;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;3,2;2;2;Pozytywna;Wystêpuje choroba serca
+123;w_3_55_61;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_3_245_281;nie;w normie;mak_1_below_133;tak;1,2;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+124;w_4_61_up;kobieta;bóle niedusznicowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;0,8;1;0;Pozytywna;Brak choroby serca
+125;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_2_120_130;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;0,5;3;1;Pozytywna;Brak choroby serca
+126;w_2_48_55;kobieta;bóle niedusznicowe;cis_4_140_up;chol_1_below_213;nie;w normie;mak_3_154_166;nie;0;1;1;Pozytywna;Brak choroby serca
+127;w_4_61_up;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_3_245_281;nie;w normie;mak_1_below_133;tak;1,8;2;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+128;w_2_48_55;kobieta;bóle niedusznicowe;cis_3_130_140;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0,1;2;0;Pozytywna;Brak choroby serca
+129;w_2_48_55;mê¿czyzna;nietypowa dusznica;cis_3_130_140;chol_1_below_213;nie;w normie;mak_3_154_166;nie;0,8;1;1;Pozytywna;Brak choroby serca
+130;w_3_55_61;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_2_213_245;tak;w normie;mak_3_154_166;tak;1,4;1;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+131;w_4_61_up;kobieta;bezobjawowe;cis_1_below_120;chol_3_245_281;nie;w normie;mak_4_166_up;tak;1,8;2;2;Pozytywna;Wystêpuje choroba serca
+132;w_4_61_up;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;0,1;1;1;Pozytywna;Wystêpuje choroba serca
+133;w_1_below_48;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_2_213_245;nie;w normie;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+134;w_4_61_up;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;2,2;3;1;Pozytywna;Wystêpuje choroba serca
+135;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;1,6;1;0;Trwa³e uszkodzenie serca;Brak choroby serca
+136;w_1_below_48;kobieta;bóle niedusznicowe;cis_4_140_up;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;tak;1,4;3;0;Pozytywna;Brak choroby serca
+137;w_4_61_up;kobieta;bóle niedusznicowe;cis_4_140_up;chol_3_245_281;nie;w normie;mak_4_166_up;nie;0;1;1;Pozytywna;Brak choroby serca
+138;w_3_55_61;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_3_245_281;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;1,2;2;1;Pozytywna;Wystêpuje choroba serca
+139;w_1_below_48;kobieta;nietypowa dusznica;cis_1_below_120;chol_1_below_213;nie;w normie;mak_4_166_up;nie;0,7;1;0;Pozytywna;Brak choroby serca
+140;w_3_55_61;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_1_below_213;nie;w normie;mak_4_166_up;tak;0;1;0;Trwa³e uszkodzenie serca;Brak choroby serca
+141;w_4_61_up;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;2;2;2;Ustalono wadê serca;Wystêpuje choroba serca
+142;w_3_55_61;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+143;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_2_213_245;nie;w normie;mak_3_154_166;nie;0,6;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+144;w_2_48_55;mê¿czyzna;typowa dusznica;cis_2_120_130;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;1,4;1;1;Pozytywna;Brak choroby serca
+145;w_2_48_55;mê¿czyzna;nietypowa dusznica;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+146;w_2_48_55;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_4_281_up;nie;w normie;mak_1_below_133;tak;2;2;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+147;w_2_48_55;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_2_213_245;nie;w normie;mak_3_154_166;nie;0;1;1;Pozytywna;Wystêpuje choroba serca
+148;w_1_below_48;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;2;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+149;w_3_55_61;mê¿czyzna;bóle niedusznicowe;cis_3_130_140;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;3,2;1;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+150;w_1_below_48;kobieta;bóle niedusznicowe;cis_1_below_120;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;tak;0;1;0;Pozytywna;Brak choroby serca
+151;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_1_below_120;chol_3_245_281;nie;w normie;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+152;w_2_48_55;kobieta;bóle niedusznicowe;cis_2_120_130;chol_2_213_245;nie;w normie;mak_3_154_166;nie;1,6;2;0;Pozytywna;Brak choroby serca
+153;w_2_48_55;kobieta;bóle niedusznicowe;cis_1_below_120;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+154;w_4_61_up;kobieta;bezobjawowe;cis_3_130_140;chol_4_281_up;nie;w normie;mak_1_below_133;nie;2;2;2;Pozytywna;Brak choroby serca
+155;w_2_48_55;kobieta;bóle niedusznicowe;cis_3_130_140;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;0,5;1;0;Pozytywna;Brak choroby serca
+156;w_1_below_48;kobieta;nietypowa dusznica;cis_1_below_120;chol_1_below_213;nie;w normie;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+157;w_3_55_61;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_2_213_245;nie;w normie;mak_1_below_133;tak;5,6;3;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+158;w_1_below_48;mê¿czyzna;nietypowa dusznica;cis_2_120_130;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+159;w_3_55_61;mê¿czyzna;typowa dusznica;cis_2_120_130;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;1,9;2;0;Trwa³e uszkodzenie serca;Brak choroby serca
+160;w_4_61_up;kobieta;bezobjawowe;cis_4_140_up;chol_2_213_245;tak;w normie;mak_3_154_166;tak;1;2;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+161;w_1_below_48;mê¿czyzna;typowa dusznica;cis_2_120_130;chol_2_213_245;nie;w normie;mak_4_166_up;tak;3,8;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+162;w_4_61_up;kobieta;bezobjawowe;cis_4_140_up;chol_2_213_245;nie;w normie;mak_3_154_166;tak;1,4;2;0;Pozytywna;Wystêpuje choroba serca
+163;w_3_55_61;mê¿czyzna;nietypowa dusznica;cis_3_130_140;chol_3_245_281;nie;w normie;mak_3_154_166;nie;0;1;0;Pozytywna;Brak choroby serca
+164;w_3_55_61;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;3;2;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+165;w_1_below_48;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_1_below_213;nie;w normie;mak_3_154_166;nie;0;1;0;Trwa³e uszkodzenie serca;Brak choroby serca
+166;w_4_61_up;kobieta;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;w normie;mak_3_154_166;tak;0;1;0;Pozytywna;Brak choroby serca
+167;w_2_48_55;kobieta;bezobjawowe;cis_1_below_120;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;0;1;0;Pozytywna;Brak choroby serca
+168;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_3_130_140;chol_1_below_213;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;1,2;3;0;Pozytywna;Brak choroby serca
+169;w_1_below_48;kobieta;bezobjawowe;cis_3_130_140;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;0,2;2;0;Pozytywna;Brak choroby serca
+170;w_4_61_up;mê¿czyzna;typowa dusznica;cis_3_130_140;chol_4_281_up;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;1,4;2;1;Pozytywna;Wystêpuje choroba serca
+171;w_4_61_up;mê¿czyzna;typowa dusznica;cis_4_140_up;chol_2_213_245;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;0,1;2;1;Pozytywna;Brak choroby serca
+172;w_4_61_up;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;2;2;3;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+173;w_4_61_up;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;0,9;2;2;Pozytywna;Wystêpuje choroba serca
+174;w_4_61_up;kobieta;bóle niedusznicowe;cis_2_120_130;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;1,5;2;0;Pozytywna;Brak choroby serca
+175;w_1_below_48;mê¿czyzna;typowa dusznica;cis_1_below_120;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+176;w_4_61_up;kobieta;bezobjawowe;cis_3_130_140;chol_4_281_up;tak;w normie;mak_1_below_133;nie;1,9;2;3;Pozytywna;Wystêpuje choroba serca
+177;w_2_48_55;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;w normie;mak_1_below_133;tak;4,2;2;3;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+178;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_2_213_245;nie;w normie;mak_2_133_154;nie;3,6;2;0;Pozytywna;Wystêpuje choroba serca
+179;w_4_61_up;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_3_245_281;tak;w normie;mak_3_154_166;nie;0,2;2;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+180;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_2_120_130;chol_1_below_213;nie;w normie;mak_3_154_166;nie;0;1;0;Pozytywna;Brak choroby serca
+181;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_2_120_130;chol_2_213_245;tak;w normie;mak_4_166_up;nie;0,8;3;0;Trwa³e uszkodzenie serca;Brak choroby serca
+182;w_3_55_61;kobieta;bezobjawowe;cis_3_130_140;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;1,9;2;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+183;w_1_below_48;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;0;1;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+184;w_1_below_48;kobieta;bezobjawowe;cis_1_below_120;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;0,6;2;0;Pozytywna;Brak choroby serca
+185;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_3_130_140;chol_3_245_281;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;3;Pozytywna;Brak choroby serca
+186;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_3_130_140;chol_4_281_up;nie;w normie;mak_3_154_166;nie;1,9;1;1;Pozytywna;Brak choroby serca
+187;w_3_55_61;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;2,1;2;1;Ustalono wadê serca;Wystêpuje choroba serca
+188;w_2_48_55;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_2_213_245;tak;w normie;mak_2_133_154;nie;0,1;1;3;Trwa³e uszkodzenie serca;Brak choroby serca
+189;w_4_61_up;kobieta;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;1,2;2;0;Pozytywna;Brak choroby serca
+190;w_4_61_up;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_3_245_281;nie;w normie;mak_1_below_133;tak;2,9;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+191;w_2_48_55;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_2_213_245;nie;w normie;mak_3_154_166;nie;1,2;1;0;Pozytywna;Brak choroby serca
+192;w_4_61_up;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_1_below_213;nie;w normie;mak_1_below_133;tak;2,6;3;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+193;w_2_48_55;mê¿czyzna;nietypowa dusznica;cis_1_below_120;chol_4_281_up;nie;w normie;mak_3_154_166;nie;0;1;0;Trwa³e uszkodzenie serca;Brak choroby serca
+194;w_1_below_48;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;tak;0;1;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+195;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_2_120_130;chol_3_245_281;tak;w normie;mak_4_166_up;nie;0;1;2;Pozytywna;Brak choroby serca
+196;w_3_55_61;kobieta;nietypowa dusznica;cis_3_130_140;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;1,4;2;0;Pozytywna;Brak choroby serca
+197;w_3_55_61;kobieta;bezobjawowe;cis_1_below_120;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;1;2;0;Pozytywna;Brak choroby serca
+198;w_2_48_55;kobieta;bóle niedusznicowe;cis_1_below_120;chol_2_213_245;nie;w normie;mak_3_154_166;nie;1,6;2;0;Pozytywna;Brak choroby serca
+199;w_4_61_up;kobieta;typowa dusznica;cis_4_140_up;chol_2_213_245;nie;w normie;mak_2_133_154;nie;1,8;1;2;Pozytywna;Brak choroby serca
+200;w_4_61_up;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;tak;0;1;3;Pozytywna;Wystêpuje choroba serca
+201;w_4_61_up;mê¿czyzna;bóle niedusznicowe;cis_1_below_120;chol_3_245_281;nie;w normie;mak_2_133_154;nie;1;1;1;Trwa³e uszkodzenie serca;Brak choroby serca
+202;w_3_55_61;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+203;w_3_55_61;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;2,8;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+204;w_2_48_55;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;w normie;mak_4_166_up;tak;1,6;1;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+205;w_3_55_61;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;0,8;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+206;w_2_48_55;mê¿czyzna;typowa dusznica;cis_4_140_up;chol_4_281_up;tak;w normie;mak_4_166_up;nie;1,2;2;0;Trwa³e uszkodzenie serca;Brak choroby serca
+207;w_3_55_61;kobieta;bóle niedusznicowe;cis_1_below_120;chol_4_281_up;nie;w normie;mak_3_154_166;nie;0;1;1;Pozytywna;Brak choroby serca
+208;w_3_55_61;mê¿czyzna;bóle niedusznicowe;cis_1_below_120;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;tak;0,6;2;0;Trwa³e uszkodzenie serca;Brak choroby serca
+209;w_4_61_up;mê¿czyzna;bóle niedusznicowe;cis_2_120_130;chol_4_281_up;nie;w normie;mak_1_below_133;tak;1,8;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+210;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_3_130_140;chol_3_245_281;nie;w normie;mak_4_166_up;nie;3,5;3;0;Pozytywna;Brak choroby serca
+211;w_3_55_61;mê¿czyzna;typowa dusznica;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;0,2;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+212;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_2_120_130;chol_3_245_281;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;2,4;2;0;Pozytywna;Brak choroby serca
+213;w_1_below_48;kobieta;bóle niedusznicowe;cis_2_120_130;chol_2_213_245;nie;w normie;mak_3_154_166;nie;0,2;2;0;Pozytywna;Brak choroby serca
+214;w_3_55_61;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;2,2;2;3;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+215;w_1_below_48;mê¿czyzna;nietypowa dusznica;cis_3_130_140;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+216;w_1_below_48;kobieta;nietypowa dusznica;cis_3_130_140;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;1,4;1;0;Pozytywna;Brak choroby serca
+217;w_4_61_up;kobieta;bóle niedusznicowe;cis_3_130_140;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+218;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_1_below_120;chol_2_213_245;nie;w normie;mak_3_154_166;tak;0;1;1;Trwa³e uszkodzenie serca;Brak choroby serca
+219;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_2_120_130;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;0,4;2;0;Trwa³e uszkodzenie serca;Brak choroby serca
+220;w_1_below_48;mê¿czyzna;nietypowa dusznica;cis_2_120_130;chol_2_213_245;nie;w normie;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+221;w_2_48_55;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_2_213_245;nie;w normie;mak_1_below_133;tak;2,8;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+222;w_4_61_up;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;nie;2,8;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+223;w_3_55_61;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_1_below_213;nie;w normie;mak_4_166_up;nie;1,6;1;0;Pozytywna;Brak choroby serca
+224;w_4_61_up;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_4_281_up;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;1,8;1;3;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+225;w_1_below_48;kobieta;bezobjawowe;cis_3_130_140;chol_1_below_213;nie;w normie;mak_4_166_up;nie;1,4;1;0;Pozytywna;Brak choroby serca
+226;w_1_below_48;mê¿czyzna;nietypowa dusznica;cis_3_130_140;chol_1_below_213;nie;w normie;mak_1_below_133;nie;0;2;0;Ustalono wadê serca;Brak choroby serca
+227;w_4_61_up;kobieta;bóle niedusznicowe;cis_3_130_140;chol_3_245_281;nie;w normie;mak_1_below_133;nie;1,2;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+228;w_1_below_48;kobieta;bezobjawowe;cis_3_130_140;chol_4_281_up;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;3;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+229;w_3_55_61;kobieta;typowa dusznica;cis_4_140_up;chol_4_281_up;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;1;1;0;Pozytywna;Brak choroby serca
+230;w_2_48_55;mê¿czyzna;typowa dusznica;cis_1_below_120;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;2;0;Ustalono wadê serca;Brak choroby serca
+231;w_4_61_up;kobieta;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;1;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+232;w_1_below_48;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_2_213_245;nie;w normie;mak_2_133_154;nie;1,2;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+233;w_1_below_48;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+234;w_2_48_55;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_3_245_281;nie;w normie;mak_3_154_166;tak;0;1;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+235;w_4_61_up;mê¿czyzna;bóle niedusznicowe;cis_3_130_140;chol_2_213_245;nie;w normie;mak_2_133_154;nie;1,8;2;3;Trwa³e uszkodzenie serca;Brak choroby serca
+236;w_4_61_up;kobieta;bezobjawowe;cis_4_140_up;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;6,2;3;3;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+237;w_2_48_55;kobieta;bezobjawowe;cis_3_130_140;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;0;1;0;Pozytywna;Brak choroby serca
+238;w_1_below_48;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;2,5;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+239;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_3_130_140;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;0;1;0;Pozytywna;Brak choroby serca
+240;w_2_48_55;mê¿czyzna;nietypowa dusznica;cis_2_120_130;chol_4_281_up;nie;w normie;mak_4_166_up;nie;0,2;1;0;Pozytywna;Brak choroby serca
+241;w_4_61_up;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_3_245_281;tak;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;1,6;2;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+242;w_1_below_48;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+243;w_2_48_55;kobieta;bezobjawowe;cis_3_130_140;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;0,4;2;0;Pozytywna;Brak choroby serca
+244;w_4_61_up;kobieta;bezobjawowe;cis_4_140_up;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;3,6;3;2;Pozytywna;Wystêpuje choroba serca
+245;w_2_48_55;kobieta;bóle niedusznicowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;1,5;1;1;Pozytywna;Brak choroby serca
+246;w_3_55_61;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_3_245_281;nie;w normie;mak_2_133_154;tak;1,4;1;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+247;w_4_61_up;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_3_245_281;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;0,6;1;2;Ustalono wadê serca;Wystêpuje choroba serca
+248;w_4_61_up;kobieta;bóle niedusznicowe;cis_4_140_up;chol_3_245_281;nie;w normie;mak_2_133_154;nie;0,8;1;0;Pozytywna;Brak choroby serca
+249;w_3_55_61;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;3;2;0;Pozytywna;Wystêpuje choroba serca
+250;w_3_55_61;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;tak;2,8;2;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+251;w_2_48_55;mê¿czyzna;bezobjawowe;cis_2_120_130;chol_1_below_213;nie;w normie;mak_1_below_133;nie;1,4;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+252;w_1_below_48;mê¿czyzna;nietypowa dusznica;cis_3_130_140;chol_2_213_245;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+253;w_1_below_48;mê¿czyzna;bezobjawowe;cis_1_below_120;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;0;1;1;Pozytywna;Wystêpuje choroba serca
+254;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_1_below_120;chol_1_below_213;nie;w normie;mak_1_below_133;nie;0,6;1;0;Pozytywna;Brak choroby serca
+255;w_3_55_61;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_1_below_213;tak;w normie;mak_3_154_166;nie;1,6;1;0;Pozytywna;Brak choroby serca
+256;w_4_61_up;kobieta;nietypowa dusznica;cis_4_140_up;chol_4_281_up;nie;w normie;mak_3_154_166;nie;0,4;1;2;Pozytywna;Brak choroby serca
+257;w_4_61_up;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_2_213_245;tak;w normie;mak_2_133_154;tak;1;2;0;Pozytywna;Brak choroby serca
+258;w_3_55_61;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_4_281_up;nie;w normie;mak_1_below_133;tak;1,2;2;1;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+259;w_4_61_up;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_4_281_up;nie;w normie;mak_3_154_166;nie;0;1;0;Pozytywna;Wystêpuje choroba serca
+260;w_1_below_48;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_3_245_281;nie;w normie;mak_4_166_up;nie;1,5;1;0;Pozytywna;Brak choroby serca
+261;w_3_55_61;kobieta;bóle niedusznicowe;cis_2_120_130;chol_4_281_up;nie;w normie;mak_4_166_up;nie;0;1;0;Pozytywna;Brak choroby serca
+262;w_3_55_61;mê¿czyzna;bezobjawowe;cis_3_130_140;chol_1_below_213;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;2,4;2;2;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+263;w_3_55_61;mê¿czyzna;nietypowa dusznica;cis_2_120_130;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_3_154_166;nie;1,8;2;0;Pozytywna;Wystêpuje choroba serca
+264;w_2_48_55;mê¿czyzna;nietypowa dusznica;cis_3_130_140;chol_3_245_281;nie;w normie;mak_4_166_up;nie;0,6;1;0;Pozytywna;Brak choroby serca
+265;w_2_48_55;mê¿czyzna;nietypowa dusznica;cis_1_below_120;chol_2_213_245;nie;w normie;mak_4_166_up;nie;1;3;0;Trwa³e uszkodzenie serca;Wystêpuje choroba serca
+266;w_2_48_55;mê¿czyzna;bóle niedusznicowe;cis_4_140_up;chol_1_below_213;tak;w normie;mak_3_154_166;nie;0,5;1;0;Trwa³e uszkodzenie serca;Brak choroby serca
+267;w_1_below_48;mê¿czyzna;nietypowa dusznica;cis_2_120_130;chol_3_245_281;nie;w normie;mak_4_166_up;nie;0;1;0;Trwa³e uszkodzenie serca;Brak choroby serca
+268;w_3_55_61;kobieta;nietypowa dusznica;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_2_133_154;nie;1,3;2;0;Pozytywna;Brak choroby serca
+269;w_3_55_61;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_1_below_213;nie;w normie;mak_2_133_154;nie;0,4;2;0;Ustalono wadê serca;Brak choroby serca
+270;w_4_61_up;mê¿czyzna;bezobjawowe;cis_4_140_up;chol_4_281_up;nie;prawdopodobny lub pewny przerost lewej komory wed³ug kryteriów Estes;mak_1_below_133;tak;1,5;2;3;Pozytywna;Wystêpuje choroba serca

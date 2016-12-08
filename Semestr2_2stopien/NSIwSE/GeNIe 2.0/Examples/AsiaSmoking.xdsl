@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Asia_dsl" numsamples="1000">
+	<nodes>
+		<cpt id="VisitToAsia">
+			<state id="NoVisit" />
+			<state id="Visit" />
+			<probabilities>0.99 0.01</probabilities>
+		</cpt>
+		<cpt id="Tuberculosis">
+			<state id="Absent" />
+			<state id="Present" />
+			<parents>VisitToAsia</parents>
+			<probabilities>0.99 0.01 0.95 0.05</probabilities>
+		</cpt>
+		<decision id="Smoke_OR_Abstain">
+			<state id="Smoke" />
+			<state id="Abstain" />
+		</decision>
+		<deterministic id="Smoking">
+			<state id="NonSmoker" />
+			<state id="Smoker" />
+			<parents>Smoke_OR_Abstain</parents>
+			<resultingstates>Smoker NonSmoker</resultingstates>
+		</deterministic>
+		<cpt id="LungCancer">
+			<state id="Absent" />
+			<state id="Present" />
+			<parents>Smoking</parents>
+			<probabilities>0.99 0.01 0.9 0.1</probabilities>
+		</cpt>
+		<deterministic id="TbOrCa">
+			<state id="Nothing" />
+			<state id="CancerORTuberculosis" />
+			<parents>Tuberculosis LungCancer</parents>
+			<resultingstates>Nothing CancerORTuberculosis CancerORTuberculosis CancerORTuberculosis</resultingstates>
+		</deterministic>
+		<cpt id="XRay">
+			<state id="Normal" />
+			<state id="Abnormal" />
+			<parents>TbOrCa</parents>
+			<probabilities>0.95 0.05 0.02 0.98</probabilities>
+		</cpt>
+		<cpt id="Bronchitis">
+			<state id="Absent" />
+			<state id="Present" />
+			<parents>Smoking</parents>
+			<probabilities>0.7 0.3 0.4 0.6</probabilities>
+		</cpt>
+		<cpt id="Dyspnea">
+			<state id="Absent" />
+			<state id="Present" />
+			<parents>TbOrCa Bronchitis</parents>
+			<probabilities>0.9 0.1 0.2 0.8 0.3 0.7 0.1 0.9</probabilities>
+		</cpt>
+		<utility id="Value">
+			<parents>LungCancer Bronchitis Smoke_OR_Abstain</parents>
+			<utilities>100 95 90 85 10 5 5 0</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" name="Asia network by David Spiegelhalter extended to ID" faultnameformat="nodestate">
+			<comment>This is an example Bayesian network due to Lauritzen and Spiegelhalter, extended to an influence diagram. It is useful in demonstrating basics concepts of influence diagrams. The diagnostic part (the decision and the value node) helps in deciding whether or not to smoke.\nThe original network first appeared in:\nLauritzen, Steffen L. &amp; Spiegelhalter, David J. (1988). Local computations with probabilities on graphical structures and their application to expert systems, Journal of the Royal Statistical Society B, 50(2):157-224.</comment>
+			<node id="VisitToAsia">
+				<name>Visit To Asia?</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>15 23 95 59</position>
+				<comment>The node models whether the individual in question visited Asia recently. This is considered to be a risk factor in tuberculosis.</comment>
+			</node>
+			<node id="Tuberculosis">
+				<name>Tuberculosis?</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>16 82 94 118</position>
+				<comment>Presence or absence of tuberculosis.</comment>
+			</node>
+			<node id="Smoke_OR_Abstain">
+				<name>Smoke or Abstain</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>262 22 378 58</position>
+				<comment>Should the individual smoke or abstain from smoking?</comment>
+			</node>
+			<node id="Smoking">
+				<name>Smoking?</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>167 22 234 58</position>
+				<comment>Does the individual smoke or not? This is a serious risk factor in both lung cancer and in bronchitis.</comment>
+			</node>
+			<node id="LungCancer">
+				<name>Lung Cancer?</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>115 82 197 118</position>
+				<comment>Does the individual suffer from lung cancer?</comment>
+			</node>
+			<node id="TbOrCa">
+				<name>Tuberculosis or Lung Cancer?</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>67 142 142 178</position>
+				<comment>Does the individual suffer from either tuberculosis or lung cancer? This node models practically existence of changes in the lungs, such as presence of condensed mass in the lungs.</comment>
+			</node>
+			<node id="XRay">
+				<name>X-Ray Result</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>16 203 94 239</position>
+				<comment>This node models the X-ray result. Both tuberculosis and lung cancer can be discovered on the X-ray because of presence of condensed mass in the lungs.</comment>
+			</node>
+			<node id="Bronchitis">
+				<name>Bronchitis?</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>210 82 280 118</position>
+				<comment>Does the individual suffer from bronchitis?</comment>
+			</node>
+			<node id="Dyspnea">
+				<name>Dyspnea?</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>118 203 194 239</position>
+				<comment>Does the individual suffer from dyspnea (shortness of breath)? Each of the diseases modeled can result in shortness of breath.</comment>
+			</node>
+			<node id="Value">
+				<name>Value</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>282 202 358 238</position>
+				<comment>Total value to the individual. Both health and pleasure derived from smoking are factors in the total value. Please note that getting lung cancer is quite bad and this is reflected in the numbers.</comment>
+			</node>
+			<textbox>
+				<caption>This is an example Bayesian network due to Lauritzen and Spiegelhalter, extended to an influence diagram. It is useful in demonstrating basics concepts of influence diagrams. The diagnostic part (the decision and the value node) helps in deciding whether or not to smoke.\nThe original network first appeared in:\nLauritzen, Steffen L. &amp; Spiegelhalter, David J. (1988). Local computations with probabilities on graphical structures and their application to expert systems, Journal of the Royal Statistical Society B, 50(2):157-224.</caption>
+				<font color="3366ff" name="Arial" size="10" bold="true" />
+				<position>391 17 657 241</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,88 @@
+<style type="text/css">
+  #field {border: black 1px solid;  }
+</style>
+
+<script>
+    var canvas; var w=640; var h=480;
+    var ctx;
+
+    var leftObject = { x: 0, y: 100, r: 50, direction: 1, vx: 0 }
+    var rightObject ={ x: w-100, y: 100, r: 50, direction: -1, vx: 0 }
+
+
+    function init(){
+      canvas=document.getElementById('field');
+      ctx=canvas.getContext('2d');
+    }
+
+    setInterval(function(){
+      leftObject.vx=100;
+      rightObject.vx=100;
+
+      ctx.clearRect(0,0,w,h);
+      ctx.save();
+
+      ctx.beginPath();
+      var lx=leftObject.x;
+      var rx=rightObject.x;
+      if (leftObject.x>rightObject.x-(2*rightObject.r)){
+        leftObject.direction=-1;
+        rightObject.direction=1;
+        leftObject.vx*=1.002;
+        rightObject.vx*=1.002;
+        lx=leftObject.x+leftObject.r;
+        rx=rightObject.x+(rightObject.r*4);
+      }
+      if (lx-leftObject.r<0 ){
+        leftObject.direction=1;
+        leftObject.vx*=1.002;
+        lx=leftObject.x;
+      }
+      if ( rx>w-2*rightObject.r){
+        rightObject.direction=-1;
+        rightObject.vx*=1.002;
+        rx=rightObject.x;
+      }
+        if (leftObject.direction==-1){
+          ctx.fillStyle="yellow";
+          ctx.shadowColor="#a89f28";
+          ctx.shadowBlur="30";
+          ctx.arc(lx,100,leftObject.r,0,2*Math.PI,true);
+
+        }
+        if (rightObject.direction==1){
+          ctx.fillStyle="yellow";
+          ctx.shadowColor="#a89f28";
+          ctx.shadowBlur="30";
+          ctx.arc(rx,100,rightObject.r,0,2*Math.PI,true);
+        }
+        if (leftObject.direction==1){
+          ctx.fillStyle="rgba(0,255,0,1)";
+          ctx.shadowColor="#5aaa2c";
+          ctx.shadowBlur="30";
+          ctx.rect(lx,100-leftObject.r,leftObject.r*2,leftObject.r*2);
+        }
+        if (rightObject.direction==-1){
+          ctx.fillStyle="rgba(0,255,0,1)";
+          ctx.shadowColor="#5aaa2c";
+          ctx.shadowBlur="30";
+          ctx.rect(rx,100-rightObject.r,rightObject.r*2,rightObject.r*2);
+        }
+        leftObject.x+=leftObject.direction*(leftObject.vx)*(30/1000);
+        rightObject.x+=rightObject.direction*(rightObject.vx)*(30/1000);
+      ctx.closePath();
+      ctx.fill();
+
+      ctx.restore();
+
+
+    },2);
+
+
+
+    window.addEventListener("load",init,false);
+</script>
+
+
+<canvas id="field" height="480" width="640">
+</canvas>

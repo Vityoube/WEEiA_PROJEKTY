@@ -1,0 +1,349 @@
+
+	This is a Classroom License for instructional use only.
+	Research and commercial use is prohibited.
+
+ MATLAB desktop keyboard shortcuts, such as Ctrl+S, are now customizable.
+ In addition, many keyboard shortcuts have changed for improved consistency
+ across the desktop.
+
+ To customize keyboard shortcuts, use Preferences. From there, you can also
+ restore previous default settings by following the steps outlined in Help.
+
+ Click here if you do not want to see this message again.
+ 
+>> load mitochondria
+>> whos mitochondria
+  Name              Size               Bytes  Class    Attributes
+
+  mitochondria      1x16569            33138  char               
+
+>> mitochondria_gbk
+
+mitochondria_gbk = 
+
+                LocusName: 'NC_012920'
+      LocusSequenceLength: '16569'
+     LocusNumberofStrands: ''
+            LocusTopology: 'circular'
+        LocusMoleculeType: 'DNA'
+     LocusGenBankDivision: 'PRI'
+    LocusModificationDate: '30-NOV-2009'
+               Definition: 'Homo sapiens mitochondrion, complete genome.'
+                Accession: 'NC_012920 AC_000021'
+                  Version: 'NC_012920.1'
+                       GI: '251831106'
+                  Project: []
+                   DBLink: 'Project:30353'
+                 Keywords: []
+                  Segment: []
+                   Source: 'mitochondrion Homo sapiens (human)'
+           SourceOrganism: [4x65 char]
+                Reference: {1x7 cell}
+                  Comment: [24x67 char]
+                 Features: [933x74 char]
+                      CDS: [1x13 struct]
+                 Sequence: [1x16569 char]
+                SearchURL: [1x70 char]
+              RetrieveURL: [1x104 char]
+
+wykresy ilosci nukleotydow i ich komplementarnych par
+
+>> ntdensity(mitochondria)
+
+ilosc nukleotydow (nic 3'-5')
+>> basecount(mitochondria)
+
+ans = 
+
+    A: 5124
+    C: 5181
+    G: 2169
+    T: 4094
+
+ilosc nukleotydow (nic 5'-3')
+>> basecount(seqrcomplement(mitochondria))
+
+ans = 
+
+    A: 4094
+    C: 2169
+    G: 5181
+    T: 5124
+Wizualizacja ilosci poszczegolnych nukleotydow
+>> basecount(mitochondria,'chart','pie')
+
+ans = 
+
+    A: 5124
+    C: 5181
+    G: 2169
+    T: 4094
+
+>> basecount(mitochondria,'chart','pie');
+
+>> codoncount(mitochondria)
+AAA - 167     AAC - 171     AAG -  71     AAT - 130     
+ACA - 137     ACC - 191     ACG -  42     ACT - 153     
+AGA -  59     AGC -  87     AGG -  51     AGT -  54     
+ATA - 126     ATC - 131     ATG -  55     ATT - 113     
+CAA - 146     CAC - 145     CAG -  68     CAT - 148     
+CCA - 141     CCC - 205     CCG -  49     CCT - 173     
+CGA -  40     CGC -  54     CGG -  29     CGT -  27     
+CTA - 175     CTC - 142     CTG -  74     CTT - 101     
+GAA -  67     GAC -  53     GAG -  49     GAT -  35     
+GCA -  81     GCC - 101     GCG -  16     GCT -  59     
+GGA -  36     GGC -  47     GGG -  23     GGT -  28     
+GTA -  43     GTC -  26     GTG -  18     GTT -  41     
+TAA - 157     TAC - 118     TAG -  94     TAT - 107     
+TCA - 125     TCC - 116     TCG -  37     TCT - 103     
+TGA -  64     TGC -  40     TGG -  29     TGT -  26     
+TTA -  96     TTC - 107     TTG -  47     TTT -  78     
+
+>> for frame=1:3
+figure('color',[1 1 1])
+subplot(2,1,1);
+codoncount(mitochondria,'frame',frame,'figure',true);
+title(sprintf('Codons for frame %d',frame))³
+??? title(sprintf('Codons for frame %d',frame))³
+                                               |
+Error: The input character is not valid in MATLAB statements or expressions.
+ 
+>> for frame=1:3
+figure('color',[1 1 1])
+subplot(2,1,1);
+codoncount(mitochondria,'frame',frame,'figure',true);
+title(sprintf('Codons for frame %d',frame));
+subplot(2,1,2);
+codoncount(mitochondria,'reverse',true,'frame',frame,'figure',true);
+title(sprintf('Codons for reverse frame %d',frame));
+end
+AAA - 167     AAC - 171     AAG -  71     AAT - 130     
+ACA - 137     ACC - 191     ACG -  42     ACT - 153     
+AGA -  59     AGC -  87     AGG -  51     AGT -  54     
+ATA - 126     ATC - 131     ATG -  55     ATT - 113     
+CAA - 146     CAC - 145     CAG -  68     CAT - 148     
+CCA - 141     CCC - 205     CCG -  49     CCT - 173     
+CGA -  40     CGC -  54     CGG -  29     CGT -  27     
+CTA - 175     CTC - 142     CTG -  74     CTT - 101     
+GAA -  67     GAC -  53     GAG -  49     GAT -  35     
+GCA -  81     GCC - 101     GCG -  16     GCT -  59     
+GGA -  36     GGC -  47     GGG -  23     GGT -  28     
+GTA -  43     GTC -  26     GTG -  18     GTT -  41     
+TAA - 157     TAC - 118     TAG -  94     TAT - 107     
+TCA - 125     TCC - 116     TCG -  37     TCT - 103     
+TGA -  64     TGC -  40     TGG -  29     TGT -  26     
+TTA -  96     TTC - 107     TTG -  47     TTT -  78     
+
+AAA -  78     AAC -  41     AAG - 101     AAT - 113     
+ACA -  26     ACC -  28     ACG -  27     ACT -  54     
+AGA - 103     AGC -  59     AGG - 173     AGT - 153     
+ATA - 107     ATC -  35     ATG - 148     ATT - 130     
+CAA -  47     CAC -  18     CAG -  74     CAT -  55     
+CCA -  29     CCC -  23     CCG -  29     CCT -  51     
+CGA -  37     CGC -  16     CGG -  49     CGT -  42     
+CTA -  94     CTC -  49     CTG -  68     CTT -  71     
+GAA - 107     GAC -  26     GAG - 142     GAT - 131     
+GCA -  40     GCC -  47     GCG -  54     GCT -  87     
+GGA - 116     GGC - 101     GGG - 205     GGT - 191     
+GTA - 118     GTC -  53     GTG - 145     GTT - 171     
+TAA -  96     TAC -  43     TAG - 175     TAT - 126     
+TCA -  64     TCC -  36     TCG -  40     TCT -  59     
+TGA - 125     TGC -  81     TGG - 141     TGT - 137     
+TTA - 157     TTC -  67     TTG - 146     TTT - 167     
+
+AAA - 190     AAC - 157     AAG -  68     AAT - 122     
+ACA - 154     ACC - 164     ACG -  38     ACT - 131     
+AGA -  71     AGC -  94     AGG -  63     AGT -  54     
+ATA - 113     ATC - 133     ATG -  54     ATT - 120     
+CAA - 152     CAC - 141     CAG -  67     CAT - 124     
+CCA - 182     CCC - 215     CCG -  42     CCT - 174     
+CGA -  45     CGC -  38     CGG -  30     CGT -  31     
+CTA - 171     CTC - 150     CTG -  49     CTT - 118     
+GAA -  75     GAC -  57     GAG -  34     GAT -  33     
+GCA -  58     GCC -  89     GCG -  20     GCT -  61     
+GGA -  36     GGC -  48     GGG -  24     GGT -  24     
+GTA -  54     GTC -  39     GTG -  20     GTT -  22     
+TAA - 111     TAC - 130     TAG -  93     TAT - 106     
+TCA - 149     TCC - 122     TCG -  41     TCT -  94     
+TGA -  58     TGC -  46     TGG -  42     TGT -  47     
+TTA - 119     TTC -  95     TTG -  37     TTT -  82     
+
+AAA -  91     AAC -  41     AAG -  99     AAT -  97     
+ACA -  27     ACC -  28     ACG -  20     ACT -  53     
+AGA - 110     AGC -  59     AGG - 195     AGT - 128     
+ATA - 111     ATC -  46     ATG - 144     ATT - 124     
+CAA -  32     CAC -  17     CAG -  57     CAT -  53     
+CCA -  28     CCC -  25     CCG -  21     CCT -  60     
+CGA -  43     CGC -  18     CGG -  50     CGT -  39     
+CTA -  71     CTC -  46     CTG -  64     CTT -  70     
+GAA - 106     GAC -  41     GAG - 127     GAT - 107     
+GCA -  37     GCC -  56     GCG -  63     GCT - 101     
+GGA - 123     GGC -  81     GGG - 204     GGT - 160     
+GTA - 129     GTC -  59     GTG - 168     GTT - 167     
+TAA - 114     TAC -  57     TAG - 177     TAT - 128     
+TCA -  68     TCC -  50     TCG -  37     TCT -  48     
+TGA - 141     TGC -  68     TGG - 141     TGT - 157     
+TTA - 146     TTC -  59     TTG - 167     TTT - 167     
+
+AAA - 167     AAC - 167     AAG -  70     AAT - 124     
+ACA - 157     ACC - 160     ACG -  39     ACT - 128     
+AGA -  48     AGC - 101     AGG -  60     AGT -  53     
+ATA - 128     ATC - 107     ATG -  53     ATT -  97     
+CAA - 167     CAC - 168     CAG -  64     CAT - 144     
+CCA - 141     CCC - 204     CCG -  50     CCT - 195     
+CGA -  37     CGC -  63     CGG -  21     CGT -  20     
+CTA - 177     CTC - 127     CTG -  57     CTT -  99     
+GAA -  59     GAC -  59     GAG -  46     GAT -  46     
+GCA -  68     GCC -  81     GCG -  18     GCT -  59     
+GGA -  50     GGC -  56     GGG -  25     GGT -  28     
+GTA -  57     GTC -  41     GTG -  17     GTT -  41     
+TAA - 146     TAC - 129     TAG -  71     TAT - 111     
+TCA - 141     TCC - 123     TCG -  43     TCT - 110     
+TGA -  68     TGC -  37     TGG -  28     TGT -  27     
+TTA - 114     TTC - 106     TTG -  32     TTT -  91     
+
+AAA -  82     AAC -  22     AAG - 118     AAT - 120     
+ACA -  47     ACC -  24     ACG -  31     ACT -  54     
+AGA -  94     AGC -  61     AGG - 174     AGT - 131     
+ATA - 106     ATC -  33     ATG - 124     ATT - 122     
+CAA -  37     CAC -  20     CAG -  49     CAT -  54     
+CCA -  42     CCC -  24     CCG -  30     CCT -  63     
+CGA -  41     CGC -  20     CGG -  42     CGT -  38     
+CTA -  93     CTC -  34     CTG -  67     CTT -  68     
+GAA -  95     GAC -  39     GAG - 150     GAT - 133     
+GCA -  46     GCC -  48     GCG -  38     GCT -  94     
+GGA - 122     GGC -  89     GGG - 215     GGT - 164     
+GTA - 130     GTC -  57     GTG - 141     GTT - 157     
+TAA - 119     TAC -  54     TAG - 171     TAT - 113     
+TCA -  58     TCC -  36     TCG -  45     TCT -  71     
+TGA - 149     TGC -  58     TGG - 182     TGT - 154     
+TTA - 111     TTC -  75     TTG - 152     TTT - 190     
+
+seqshoworfs(mitochondria)
+
+ans = 
+
+1x3 struct array with fields:
+    Start
+    Stop
+
+orfs=seqshoworfs(mitochondria,'GeneticCode','Vertebrate Mitochondrial','alternativestart',true)
+
+orfs = 
+
+1x3 struct array with fields:
+    Start
+    Stop
+
+>> ND2Start=4470;
+>> StartIndex=find(orfs(3).Start==ND2Start)
+
+StartIndex =
+
+    25
+
+>> ND2Stop=orfs(3).Stop(StartIndex)
+
+ND2Stop =
+
+        5511
+
+ND2Seq=mitochondria(ND2Start:ND2Stop);
+
+ND2Seq =
+
+attaatcccctggcccaacccgtcatctactctaccatctttgcaggcacactcatcacagcgctaagctcgcactgattttttacctgagtaggcctagaaataaacatgctagcttttattccagttctaaccaaaaaaataaaccctcgttccacagaagctgccatcaagtatttcctcacgcaagcaaccgcatccataatccttctaatagctatcctcttcaacaatatactctccggacaatgaaccataaccaatactaccaatcaatactcatcattaataatcataatagctatagcaataaaactaggaatagccccctttcacttctgagtcccagaggttacccaaggcacccctctgacatccggcctgcttcttctcacatgacaaaaactagcccccatctcaatcatataccaaatctctccctcactaaacgtaagccttctcctcactctctcaatcttatccatcatagcaggcagttgaggtggattaaaccaaacccagctacgcaaaatcttagcatactcctcaattacccacataggatgaataatagcagttctaccgtacaaccctaacataaccattcttaatttaactatttatattatcctaactactaccgcattcctactactcaacttaaactccagcaccacgaccctactactatctcgcacctgaaacaagctaacatgactaacacccttaattccatccaccctcctctccctaggaggcctgcccccgctaaccggctttttgcccaaatgggccattatcgaagaattcacaaaaaacaatagcctcatcatccccaccatcatagccaccatcaccctccttaacctctacttctacctacgcctaatctactccacctcaatcacactactccccatatctaacaacgtaaaaataaaatgacagtttgaacatacaaaacccaccccattcctccccacactcatcgcccttaccacgctactcctacctatctccccttttatactaataatcttat
+
+>> codoncount(ND2Seq)
+AAA - 10     AAC - 14     AAG -  2     AAT -  6     
+ACA - 11     ACC - 24     ACG -  3     ACT -  5     
+AGA -  0     AGC -  4     AGG -  0     AGT -  1     
+ATA - 23     ATC - 24     ATG -  1     ATT -  8     
+CAA -  8     CAC -  3     CAG -  2     CAT -  1     
+CCA -  4     CCC - 12     CCG -  2     CCT -  5     
+CGA -  0     CGC -  3     CGG -  0     CGT -  1     
+CTA - 26     CTC - 18     CTG -  4     CTT -  7     
+GAA -  5     GAC -  0     GAG -  1     GAT -  0     
+GCA -  8     GCC -  7     GCG -  1     GCT -  4     
+GGA -  5     GGC -  7     GGG -  0     GGT -  1     
+GTA -  3     GTC -  2     GTG -  0     GTT -  3     
+TAA -  0     TAC -  8     TAG -  0     TAT -  2     
+TCA -  7     TCC - 11     TCG -  1     TCT -  4     
+TGA - 10     TGC -  0     TGG -  1     TGT -  0     
+TTA -  8     TTC -  7     TTG -  1     TTT -  8     
+
+>> aminolookup('code',nt2aa('ATA','geneticcode','Vertebrate Mitochondrial'))
+
+ans =
+
+Met	Methionine
+
+
+>> aminolookup('code',nt2aa('CTA','geneticcode','Vertebrate Mitochondrial'))
+
+ans =
+
+Leu	Leucine
+
+
+>> aminolookup('code',nt2aa('ACC','geneticcode','Vertebrate Mitochondrial'))
+
+ans =
+
+Thr	Threonine
+
+
+>> aminolookup('code',nt2aa('ATC','geneticcode','Vertebrate Mitochondrial'))
+
+ans =
+
+Met	Methionine
+
+
+>> aminolookup('code',nt2aa('ATG','geneticcode','Vertebrate Mitochondrial'))
+
+ans =
+
+Met	Methionine
+
+ ND2AASeq=nt2aa(ND2Seq,'geneticcode','Vertebrate Mitochondrial');
+>> aacount(ND2AASeq,'chart','bar')
+
+ans = 
+
+    A: 20
+    R: 4
+    N: 20
+    D: 0
+    C: 0
+    Q: 10
+    E: 6
+    G: 13
+    H: 4
+    I: 31
+    L: 64
+    K: 12
+    M: 25
+    F: 15
+    P: 23
+    S: 28
+    T: 43
+    W: 11
+    Y: 10
+    V: 8
+
+>> atomiccomp(ND2AASeq)
+
+ans = 
+
+    C: 1818
+    H: 2882
+    N: 420
+    O: 471
+    S: 25
+
+>> molweight(ND2AASeq)
+
+ans =
+
+  3.8960e+004

@@ -1,0 +1,6 @@
+JAVA_HOME
+C:\Neon\java\jdk1.8.0_112
+
+JRE_HOME
+C:\Neon\java\jre1.8.0_112
+

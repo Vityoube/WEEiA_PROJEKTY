@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="VentureEVPI" numsamples="1000">
+	<nodes>
+		<cpt id="Success">
+			<state id="Success" />
+			<state id="Failure" />
+			<probabilities>0.2 0.8</probabilities>
+		</cpt>
+		<noisymax id="Forecast">
+			<state id="Good" />
+			<state id="Moderate" />
+			<state id="Poor" />
+			<parents>Success</parents>
+			<strengths>0 1</strengths>
+			<parameters>0 0 1 0 0 1 0.33333333 0.33333333 0.33333333</parameters>
+		</noisymax>
+		<decision id="Invest">
+			<state id="Invest" />
+			<state id="DoNotInvest" />
+			<parents>Forecast</parents>
+		</decision>
+		<utility id="Gain">
+			<parents>Invest Success</parents>
+			<utilities>10000 -5000 500 500</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" name="VentureEVPI" faultnameformat="nodestate">
+			<comment>This tutorial network demonstrates the use of submodels in GeNIe.</comment>
+			<submodel id="Risks">
+				<name>Risks</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" width="3" />
+				<font color="000000" name="Arial" size="8" />
+				<position>137 14 213 50</position>
+				<comment>The Risks submodel contains all variables related to risks of the investment in the business venture.</comment>
+				<window>143 -1 555 247</window>
+				<node id="Success">
+					<name>Success of the venture</name>
+					<interior color="e5f6f7" />
+					<outline color="0000bb" />
+					<font color="000000" name="Arial" size="8" />
+					<position>54 11 130 47</position>
+					<comment>This variable describes uncertainty related to the success of a widget manufacturing plant. Quantification of the uncertainty is obtained from market statistics for widget producing ventures. We simplified the variable somewhat by assuming that it can take only two values: success or failure.</comment>
+				</node>
+				<node id="Forecast">
+					<name>Expert forecast</name>
+					<interior color="e5f6f7" />
+					<outline color="0000bb" />
+					<font color="000000" name="Arial" size="8" />
+					<position>54 95 130 131</position>
+					<comment>The information captured in this variable comes from T.J. Jones Company, Professional Consultants.</comment>
+				</node>
+				<textbox>
+					<caption>The Risks submodel contains all variables related to risks of the investment in the business venture.</caption>
+					<font color="000000" name="Arial" size="10" bold="true" />
+					<position>157 31 360 95</position>
+				</textbox>
+				<textbox>
+					<caption>Try navigating through the model by right-clicking on the small triangles on the right-hand side of the nodes and choosing a name of the node on the pop-up menu.</caption>
+					<font color="000000" name="Arial" size="10" bold="true" />
+					<position>26 140 387 188</position>
+				</textbox>
+			</submodel>
+			<node id="Invest">
+				<name>Investment decision</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>10 57 86 93</position>
+				<comment>The decision is whether to invest $5,000 in a startup company. The options are to invest or not to invest. In the latter case, the money will be deposited risk-free in a bank.</comment>
+			</node>
+			<node id="Gain">
+				<name>Financial Gain</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>86 125 162 161</position>
+				<comment>This node specifies the total financial gain resulting from the investment decision. Please note that the original investment amount is not included in the gain.</comment>
+			</node>
+			<textbox>
+				<caption>This tutorial network demonstrates the use of submodels in GeNIe. Try opening the submodel Risks, moving nodes between the main model and the Risks submodel both in the graph view and the tree view.</caption>
+				<font color="3366ff" name="Arial" size="10" bold="true" />
+				<position>225 18 407 146</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

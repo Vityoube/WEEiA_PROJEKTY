@@ -1,0 +1,2 @@
+canvas zrobić prostokąty poruszające się same do siebie, zmieniające się po uderzenie w kółka
+i powrócającę isę od nowa.

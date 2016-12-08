@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Untitled1" numsamples="1000">
+	<nodes>
+		<decision id="BusinessDecision">
+			<state id="Vending" />
+			<state id="Rentals" />
+			<state id="Sell" />
+		</decision>
+		<decision id="Location">
+			<state id="Bar" />
+			<state id="Arcade" />
+			<parents>BusinessDecision</parents>
+		</decision>
+		<decision id="Setting">
+			<state id="High" />
+			<state id="Medium" />
+			<state id="Low" />
+			<parents>Location</parents>
+		</decision>
+		<cpt id="RentalRate">
+			<state id="HighRent" />
+			<state id="LowRent" />
+			<probabilities>0.25 0.75</probabilities>
+		</cpt>
+		<cpt id="Fun">
+			<state id="Fun" />
+			<state id="NoFun" />
+			<parents>Setting</parents>
+			<probabilities>0.8 0.2 0.5 0.5 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="RevenueLevel">
+			<state id="High" />
+			<state id="Medium" />
+			<state id="Low" />
+			<probabilities>0.185 0.63 0.185</probabilities>
+		</cpt>
+		<utility id="TotalRevenue">
+			<parents>BusinessDecision RentalRate Location Setting Fun RevenueLevel</parents>
+			<utilities>199.8 139.8 79.8 129.87 90.87000000000001 51.87 300 210 120 196.8 136.5 78 359.4 251.4 144 233.61 163.41 93.59999999999999 151.51 106.02 60.51 98.48 68.90000000000001 39.33 227.5 159.25 91 147.875 103.516 59.15 272.54 190.65 109.2 177.16 123.92 70.98 199.8 139.8 79.8 129.87 90.87000000000001 51.87 300 210 120 196.8 136.5 78 359.4 251.4 144 233.61 163.41 93.59999999999999 151.51 106.02 60.51 98.48 68.90000000000001 39.33 227.5 159.25 91 147.875 103.516 59.15 272.54 190.65 109.2 177.16 123.92 70.98 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 490 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 205 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" name="Pinball influence diagram" faultnameformat="nodestate">
+			<node id="BusinessDecision">
+				<name>Business Decision</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>10 164 141 200</position>
+			</node>
+			<node id="Location">
+				<name>Location</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>84 46 160 82</position>
+			</node>
+			<node id="Setting">
+				<name>Setting</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>197 19 273 55</position>
+			</node>
+			<node id="RentalRate">
+				<name>Rental  Rate</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>122 114 224 150</position>
+			</node>
+			<node id="Fun">
+				<name>Fun</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>309 46 385 82</position>
+			</node>
+			<node id="RevenueLevel">
+				<name>Revenue Level</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>374 92 488 128</position>
+			</node>
+			<node id="TotalRevenue">
+				<name>Total Revenue</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>283 164 411 200</position>
+			</node>
+			<textbox>
+				<caption>This influence diagram has been developed by Michael T. Filipiak, Charles Neville and Joseph C. Wynn as a class project at Carnegie Mellon University. It models a real business decision related to a hobby (collecting pinball machines) turned into a business.</caption>
+				<font color="3366ff" name="Arial" size="10" bold="true" />
+				<position>18 220 516 284</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

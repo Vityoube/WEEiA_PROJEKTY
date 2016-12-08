@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Inwestycja" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="szansa_sukcesu">
+			<state id="Duzy_sukces" />
+			<state id="maly_sukces" />
+			<probabilities>0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Sukces_spolki">
+			<state id="Sukces" />
+			<state id="Porazka" />
+			<parents>szansa_sukcesu</parents>
+			<probabilities>0.2 0.8 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Przewidywania_eksperta">
+			<state id="Swietny_pomysl" />
+			<state id="Niezly_pomysl" />
+			<state id="Kiepski_pomysl" />
+			<parents>Sukces_spolki</parents>
+			<probabilities>0.4 0.4 0.2 0.1 0.3 0.6</probabilities>
+		</cpt>
+		<decision id="Decyzja_o_inwestowaniu">
+			<state id="Inwestuj" />
+			<state id="Nie_inwestuj" />
+			<parents>szansa_sukcesu</parents>
+		</decision>
+		<utility id="Zysk_finansowy">
+			<parents>Decyzja_o_inwestowaniu Sukces_spolki</parents>
+			<utilities>0 0 500 500</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.3887.0" name="Inwestycja" faultnameformat="nodestate">
+			<node id="Sukces_spolki">
+				<name>Sukces spolki</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>399 267 544 325</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Przewidywania_eksperta">
+				<name>Przewidywania eksperta</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>549 410 694 468</position>
+				<barchart active="true" width="227" height="87" />
+			</node>
+			<node id="Decyzja_o_inwestowaniu">
+				<name>Decyzja o inwestowaniu</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>89 280 249 325</position>
+				<barchart active="true" width="171" height="64" />
+			</node>
+			<node id="Zysk_finansowy">
+				<name>Zysk finansowy</name>
+				<interior color="ffff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>184 445 362 507</position>
+				<barchart active="true" width="237" height="64" />
+			</node>
+			<node id="szansa_sukcesu">
+				<name>szansa_sukcesu</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>406 106 499 164</position>
+				<barchart active="true" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ChatServer">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="ChatServerWeb.war" deploy-path="/" handle="module:/resource/ChatServerWeb/ChatServerWeb">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ChatClient.jar" deploy-path="/" handle="module:/resource/ChatClient/ChatClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ChatServerEJB.jar" deploy-path="/" handle="module:/resource/ChatServerEJB/ChatServerEJB">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="animals" numsamples="1000">
+	<nodes>
+		<cpt id="Animal">
+			<state id="Monkey" />
+			<state id="Penguin" />
+			<state id="Platypus" />
+			<state id="Robin" />
+			<state id="Turtle" />
+			<probabilities>0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<deterministic id="BearsYoungAs">
+			<state id="Eggs" />
+			<state id="Live" />
+			<parents>Animal</parents>
+			<resultingstates>Live Eggs Eggs Eggs Eggs</resultingstates>
+		</deterministic>
+		<deterministic id="Class">
+			<state id="Bird" />
+			<state id="Mammal" />
+			<state id="Reptile" />
+			<parents>Animal</parents>
+			<resultingstates>Mammal Bird Mammal Bird Reptile</resultingstates>
+		</deterministic>
+		<cpt id="Environment">
+			<state id="Air" />
+			<state id="Land" />
+			<state id="Water" />
+			<parents>Animal</parents>
+			<probabilities>0 1 0 0 0.5 0.5 0 0 1 0.5 0.5 0 0 0.5 0.5</probabilities>
+		</cpt>
+		<deterministic id="BodyCovering">
+			<state id="Hair" />
+			<state id="Down" />
+			<state id="Scales" />
+			<parents>Class</parents>
+			<resultingstates>Down Hair Scales</resultingstates>
+		</deterministic>
+		<deterministic id="HasShell">
+			<state id="True" />
+			<state id="False" />
+			<parents>Class</parents>
+			<resultingstates>False False True</resultingstates>
+		</deterministic>
+		<deterministic id="WarmBlooded">
+			<state id="True" />
+			<state id="False" />
+			<parents>Class</parents>
+			<resultingstates>True True False</resultingstates>
+		</deterministic>
+	</nodes>
+	<extensions>
+		<genie version="1.0" name="Animals network by Noetic, Inc." faultnameformat="nodestate">
+			<node id="Animal">
+				<name>Animal</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>122 22 198 58</position>
+			</node>
+			<node id="BearsYoungAs">
+				<name>Bears Young As</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>208 102 313 138</position>
+			</node>
+			<node id="Class">
+				<name>Class</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>122 102 198 138</position>
+			</node>
+			<node id="Environment">
+				<name>Environment</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>22 102 98 138</position>
+			</node>
+			<node id="BodyCovering">
+				<name>Body Covering</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>114 182 206 218</position>
+			</node>
+			<node id="HasShell">
+				<name>Has Shell</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>222 183 298 219</position>
+			</node>
+			<node id="WarmBlooded">
+				<name>Warm Blooded</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>14 182 107 218</position>
+			</node>
+			<textbox>
+				<caption>A simple animal guessing game modeled by and made available to the community by Noetic, Inc., the developers of Ergo.\nThe network will guess which of the five animals you have in mind, as you provide information about habitat and characteristics of the animal.\nThe network illustrates well the interaction between probability and propositional logic.</caption>
+				<font color="3366ff" name="Arial" size="10" bold="true" />
+				<position>320 15 530 207</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

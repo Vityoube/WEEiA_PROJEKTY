@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+locationorg.eclipse.jst.server.tomcat.runtime.80=C\:/ProgramFiles/tomcat8
+locationorg.eclipse.jst.server.tomcat.runtime.85=/home/vkalashnykov/programs/Servers/apache-tomcat-8.5.8
+locationorg.eclipse.jst.server.tomcat.runtime.90=/home/vkalashnykov/programs/Servers/apache-tomcat-9.0.0.M13

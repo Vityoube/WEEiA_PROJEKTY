@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="Doping">
+			<state id="Nie" />
+			<state id="Tak" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Test">
+			<state id="Negatywny" />
+			<state id="Pozytywny" />
+			<parents>Doping</parents>
+			<probabilities>0.9615384615384616 0.03846153846153846 0.0576923076923077 0.9423076923076924</probabilities>
+		</cpt>
+		<cpt id="Wyrzucenie">
+			<state id="Nie" />
+			<state id="Tak" />
+			<parents>Test</parents>
+			<probabilities>0.9811320754716981 0.01886792452830189 0.0196078431372549 0.9803921568627451</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.3887.0" name="Doping_test" faultnameformat="nodestate">
+			<node id="Doping">
+				<name>Doping</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>156 125 228 173</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Test">
+				<name>Test</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>156 292 228 340</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Wyrzucenie">
+				<name>Wyrzucenie</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>156 462 228 510</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

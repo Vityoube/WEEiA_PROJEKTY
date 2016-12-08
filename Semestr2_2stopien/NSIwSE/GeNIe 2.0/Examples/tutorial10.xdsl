@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="tutorial10" numsamples="1000">
+	<nodes>
+		<cpt id="Node1">
+			<state id="present" />
+			<state id="no_fuel" />
+			<probabilities>0.9 0.09999999999999998</probabilities>
+		</cpt>
+		<cpt id="Node2">
+			<state id="operational" />
+			<state id="damaged" />
+			<parents>Node1</parents>
+			<probabilities>0.99 0.01 0 1</probabilities>
+		</cpt>
+		<cpt id="Node3">
+			<state id="operational" />
+			<state id="damaged" />
+			<probabilities>0.8 0.2</probabilities>
+		</cpt>
+		<cpt id="Node4">
+			<state id="operational" />
+			<state id="damaged" />
+			<parents>Node2 Node3</parents>
+			<probabilities>0.99 0.01 0.8 0.2 0.1 0.9 0.99 0.01000000000000001</probabilities>
+		</cpt>
+		<cpt id="Node5">
+			<state id="operational" />
+			<state id="damaged" />
+			<parents>Node2</parents>
+			<probabilities>0.98 0.02000000000000002 0.7 0.3</probabilities>
+		</cpt>
+		<cpt id="Node6">
+			<state id="operational" />
+			<state id="damaged" />
+			<parents>Node4 Node5</parents>
+			<probabilities>0.99 0.01000000000000001 0.9 0.09999999999999998 0.4 0.6 0.1 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" name="Tutorial 10 - Using Control Values" faultnameformat="nodestate">
+			<comment>Tutorial 10 - Using Control Values\n\nPart of GeNIe Help.\n\nGeNIe Help Online : http://www.sis.pitt.edu/~genie/GeNIeHelp/\n\nDownload GeNIe at : http://www.sis.pitt.edu/~genie</comment>
+			<node id="Node1">
+				<name>Fuel Supply</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>172 66 257 107</position>
+			</node>
+			<node id="Node2">
+				<name>Generator</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>169 175 259 207</position>
+			</node>
+			<node id="Node3">
+				<name>Antenna Structure</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>23 162 117 214</position>
+			</node>
+			<node id="Node4">
+				<name>Radar</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>92 256 185 289</position>
+			</node>
+			<node id="Node5">
+				<name>Communications</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>234 253 353 289</position>
+			</node>
+			<node id="Node6">
+				<name>Command Center</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>173 338 265 384</position>
+			</node>
+			<textbox>
+				<caption>Tutorial 10 : Using Control Values</caption>
+				<font color="993300" name="Arial" size="14" />
+				<position>76 21 357 43</position>
+			</textbox>
+			<textbox>
+				<caption>GeNIe Help Online : http://www.sis.pitt.edu/~genie/GeNIeHelp/</caption>
+				<font color="3366ff" name="Arial" size="9" bold="true" />
+				<position>21 403 361 418</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

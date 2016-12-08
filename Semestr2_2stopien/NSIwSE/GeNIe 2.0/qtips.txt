@@ -1,0 +1,42 @@
+GeNIe has been developed at the Decision Systems Laboratory at the University of Pittsburgh. Decision Systems Laboratory is a research group working on computer-aided techniques for decision making. We support strategic business planning and scheduling. Please get in touch with us if you have a challenging problem involving decision support.
+To get more information about latest developments of GeNIe visit GeNIe's website at http://www.sis.pitt.edu/~genie/.
+Decision Systems Laboratory stands behind its products. In case of program errors, please make a note of the exact circumstances that led to error and notify us at genie@mail.sis.pitt.edu. We will try to fix the problem as soon as possible.
+You can load and save models in several formats: XDSL, DSL, Netica, Hugin, MSBN, and Ergo (Version 1.0). GeNie can be used as a conversion program between different formats.
+You can find example models at GeNIe's network repository. Visit http://www.sis.pitt.edu/~genie for more details.
+The splash screen is displayed for approximately five seconds during the start-up phase of the program. You can close it earlier by clicking the mouse.
+You can change the name of a node without opening its property tab by right clicking on the node and selecting 'Rename' from the menu. An even easier way to change names and identifiers is to open the tree view, which allows to change names and identifiers on the list directly.
+GeNIe tree view allows you to navigate through models in a way that is familiar to Windows Explorer users: you can click on submodels to open them to any depth.
+You can move nodes between submodels in GeNIe tree view. Just select a node (or a group of nodes) and drag them to their destination.
+GeNIe tree view has the full functionality of the GeNIe graph view. You can use it to open model, submodel, and node dialog boxes, set observations, examine the results, etc.
+You can locate any node in your model by choosing Find from the Edit menu (Ctrl-F is the shortcut for this operation).
+A node selected in GeNIe tree view can be located in GeNIe graph view. When you right click on the nodes and select Locate from the pop-up menu, the selected node will be located in the graph view and displayed roughly in the center of its (sub)model window.
+GeNIe supports various algorithms for reasoning in graphical models. You can select any algorithm from the list in the Network menu. This algorithm will be used also in decision-theoretic inference.
+GeNIe hat two updating modes: automatic and manual. Automatic mode causes the model to be updated as you make changes or enter evidence. The manual mode is useful in model-building stage, when the model is very large, or when you use GeNIe for teaching. In this mode, you need to click on the thunderbolt button to update the model.
+If you want to see the posterior probability distribution of a node or the solution of a decision problem in the manual updating mode, choose Update from the Network menu or click on the thunderbolt button first.
+To automatically update the model on any changes made to it, select Update Immediately from the Network Menu.
+GeNIe performs always only those computations that are necessary. In some cases you may wish to recompute all results. In order to let GeNIe know that you want to recompute everything, you can choose Invalidate from the Network menu. This will invalidate all results in the entire model, so next time you update the model, GeNIe will recompute everything.
+Pressing ESC key closes the node property sheet dialog window. It is equivalent to pressing the CANCEL button.
+GeNIe supports linearly-additive Multi-Attribute Utility (MAU) functions. You can create a MAU node by changing the node type into Multi-Attribute Utility. The parents of such node, utility nodes, are combined using a linear function with weights defined in the definition of the MAU node.
+If a utility node has incoming arcs from other utility nodes, GeNIe automatically converts it to a Multi Attribute Utility [MAU] node.
+GeNIe can help you with the layout of your model graph in the graph view. To have the nodes in your graph automatically placed in the current graph view window, choose Layout from the View menu.
+You can model Noisy-OR and Noisy-AND nodes using GeNIe's Noisy MAX node. These types of nodes are very useful in knowledge elicitation and reasoning. To create a Noisy-OR or Noisy-AND node, create any node and change its type to Chance-Noisy by right clicking on it and selecting Change Type.
+GeNIe's approach to modeling is that the model under construction is always syntactically correct. Whenever you create a node, for example, it will be defined using default values, such as a uniform probability distribution. You can edit these values according to your specifications.
+You may discover when editing a probability tables that GeNIe will not allow you to exit the definition tab until all probability distributions are syntactically correct. The button Normalize may be very helpful - when pressed after selecting a column or the entire table, it will normalize the probabilities.
+The Complement button in the Definition tab of Chance nodes may prove useful when defining probability distributions. It will be enabled only when you select a single cell in the table. When pressed, it will put a number in that cell that will make the column sum to 1.0.
+GeNIe does not require the user to create non-forgetting arcs in order to avoid obscuring the structure of the model. However, it behaves as if they were there, assuming their existence from the temporal order among the decision nodes.
+GeNIe does not require the user to specify the temporal order among the decision nodes. However, if the order is not specified by the user, and it cannot be inferred from causal considerations, GeNIe will assume an order arbitrarily and make it explicit by adding dashed arcs between decisions.
+GeNIe submodels are a powerful tool for structuring your model. Include parts of your model that are closely related in separate submodels. These can be viewed and edited in separation of the entire model.
+You can drag and drop nodes between different graph views. When both graph views are of the same network, the nodes are moved to the graph view. When the graph views are showing different networks then the nodes are copied to the graph view.
+You can change any nodes type anytime by right clicking on it and selecting Change Type.
+You can select the entire column by clicking on its header.
+To use group costs, the current node should have more than one child.
+Node question option in documentation for a node is enabled only if the node is defined as the Observation node.
+State fix option in documentation for a node is is enabled only if the node is defined as the Target node.
+You can open multiple network files at the same time in GeNIe.
+Nodes cut/copied from GeNIe Graph View, can be pasted in any graphical editing program, such as, for example, Microsoft Paint.
+You can display/hide the status bar and the toolbars from the View Menu to reduce screen clutter.
+You can use different colors to differentiate nodes and make the diagram more readable.
+To access diagnostic tools of GeNIe you have to enable diagnosis from the Network Menu.
+You can use the Fullscreen mode from the View Menu during presentations for displaying more of the model on one screen.
+Use Landscape mode for printing, if your model is wider horizontally.
+Use the zoom tool to enlarge your models on the screen.

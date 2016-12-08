@@ -1,0 +1,18 @@
+﻿  stdafx.cpp
+  MainFrm.cpp
+  Ex1View.cpp
+c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1\ex1\ex1view.cpp(110): error C2084: function 'BOOL CEx1View::OnPreparePrinting(CPrintInfo *)' already has a body
+  c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1\ex1\ex1view.cpp(70): note: see previous definition of 'OnPreparePrinting'
+c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1\ex1\ex1view.cpp(116): error C2084: function 'void CEx1View::OnBeginPrinting(CDC *,CPrintInfo *)' already has a body
+  c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1\ex1\ex1view.cpp(76): note: see previous definition of 'OnBeginPrinting'
+c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1\ex1\ex1view.cpp(121): error C2084: function 'void CEx1View::OnEndPrinting(CDC *,CPrintInfo *)' already has a body
+  c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1\ex1\ex1view.cpp(81): note: see previous definition of 'OnEndPrinting'
+c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1\ex1\ex1view.cpp(130): error C2084: function 'void CEx1View::AssertValid(void) const' already has a body
+  c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1\ex1\ex1view.cpp(90): note: see previous definition of 'AssertValid'
+c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1\ex1\ex1view.cpp(135): error C2084: function 'void CEx1View::Dump(CDumpContext &) const' already has a body
+  c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1\ex1\ex1view.cpp(95): note: see previous definition of 'Dump'
+c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1\ex1\ex1view.cpp(140): error C2084: function 'CEx1Doc *CEx1View::GetDocument(void) const' already has a body
+  c:\users\viktor\documents\weeiaa_projekty\semestr2_2stopien\mmwgc\ex1\ex1\ex1view.cpp(100): note: see previous definition of 'GetDocument'
+  Ex1Doc.cpp
+  Ex1.cpp
+  Generating Code...

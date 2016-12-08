@@ -1,0 +1,59 @@
+<style>
+  html{
+    background: url(http://cdn.wallpapersafari.com/34/62/mUoQjD.jpg) center center fixed;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .ball{
+    position: relative;
+    left: 50%;
+    top: 0%;
+    width: 10%;
+    height: 22%;
+  }
+  .moveY {
+    animation-name: moveY;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+
+  .vortex {
+    position: relative;
+    animation-name: vortex;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes moveY {
+    100% {
+      transform: translateY(300%);
+    }
+  }
+
+  @keyframes vortex {
+    0% {
+      transform: translateX(-20%);
+    }
+    33% {
+      transform: translateX(20%);
+    }
+    66% {
+      transform: translateX(20%);
+    }
+    100% {
+      transform: translateX(-20%);
+    }
+  }
+
+</style>
+
+<div id="vortex" class="vortex">
+    <img src="http://www.freeiconspng.com/uploads/poke-ball-png-13.png" class="ball moveY">
+</div>

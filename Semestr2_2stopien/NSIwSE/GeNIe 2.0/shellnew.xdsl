@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network1" numsamples="1000">
+	<nodes>
+	</nodes>
+	<extensions>
+		<genie version="1.0" name="Network1" faultnameformat="nodestate">
+		</genie>
+	</extensions>
+</smile>

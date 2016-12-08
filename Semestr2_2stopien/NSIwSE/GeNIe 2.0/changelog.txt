@@ -1,0 +1,241 @@
+[Release: 2.0.3887.0, August23rd, 2010]
+- added support for soft evidence in Case Manager
+- fixed bug in bipartite graph creation
+- fixed nodes can be matched to data during EM
+
+
+[Release: 2.0.3717.0, March 6th, 2010]
+- fixed bug in copy/paste of equation nodes
+- fixed bug in evidence setting for DBNs
+
+
+[Release: 2.0.3568.0, October 8th, 2009]
+- Soft evidence support, including soft evidence in DBNs
+- bidirectional forbidden arcs in Knowledge Editor
+- "Set Evidence" submenu works for nodes with more than 100 states
+- immediate evaluation for expressions starting with '=' in numeric cells of node grids
+
+
+[Release: 2.0.3470.0, July 2nd, 2009]
+- "Enable relevance" option added in "Run EM" dialog
+- fixed bug in column matching for learning parameters in DBNs
+
+
+[Release: 2.0.3393.0, April 16th, 2009]
+- support for new functions in expressions
+- deterministic equations nodes are displayed with double border
+- EM for continuous nodes
+
+
+[Release: 2.0.3259.0, December 3rd, 2008]
+- fixed crash in VOI dialog
+- new command: "Uniformize" in node discretization property page
+
+
+[Release: 2.0.3251.0, November 25th, 2008]
+- added public GUI entrypoint for equation nodes
+- discretization for equation nodes
+- fixed problem with operator precedence in expression tree to string conversion
+- EM for DBN implemented 
+- EM supports nodes with fixed parameters, see "Fixed nodes" button in EM matching dialog
+- added selection of nodes with fixed parameters to EM
+- improvements in PC implementation
+- save/load feature added to pattern editor
+- "Open File Location" command added in "File" menu
+- toolbar button for Case Manager
+- "Generate Data" command supports equation nodes
+- program option for specifying the number precision in node barchart view
+- option for controlling the discrete/continous threshold in "Learn New Network" dialog
+
+
+[Release: 2.0.3092.0, June 19th, 2008]
+- ALU weights correctly initialized to 1.0
+- Normalize command for ALU weights
+- new PC learning implementation and GUI
+- improved I/O performance for large discrete deterministic nodes
+- improved jointree performance (used for clustering, P(e), EM) 
+- improved core EM performance
+- node formatting retained during DBN unroll
+- "Generate Data" command supports DBNs
+
+
+[Release: 2.0.3006.0, March 25th, 2008]
+- copy/paste support for outcome names in node definition grid
+- copy/paste support for identifiers in grid in discretization dialog
+- bugfix and performance improvements in EM learning
+
+
+[Release: 2.0.2937.0, January 16th, 2008]
+- improved selection handling in data grid
+
+
+[Release: 2.0.2935.0, January 14th, 2008]
+- fixed crash in ALU/MAU definition grid
+
+
+[Release: 2.0.2932.0, January 11th, 2008]
+- XDSL support for extremely large CPTs
+- piecharts and histograms can be displayed for selected rows
+
+
+[Release: 2.0.2889.0, November 29, 2007]
+- decision parents for MAU and ALU nodes
+- expression-based MAU nodes
+- syntax highlighting and autocomplete in expression editor
+- workaround for Vista DrawCaption API bug 
+- autocomplete in filename textboxes
+- important bugfix in EM learning
+
+
+[Release: 2.0.2811.0, September 12, 2007]
+- fixed problem with values of plate nodes marked incorrectly as valid
+
+
+[Release: 2.0.2810.0, September 11, 2007]
+- support for targets in case manager
+- improved equation validation messages in node property sheet
+- new node grid options available from Tools|Options property sheet
+- data copied with full precision from node grid
+- "Rescale" option in temporal beliefs window
+- minor cosmetic fixes for Windows Vista
+
+
+[Release: 2.0.2762.0, July 25, 2007]
+- case management supported in DBNs and continous models
+- fixed problem in case manager which caused crash when removing last case
+- fixed problem with slice count and "Update Immediately" option
+
+
+[Release: 2.0.2746.0, July 09, 2007]
+- fixed crash with DBNs and "Update Immediately" option
+- fixed problems with local drag'n'drop copy in DBNs
+- fixed minor issues in Background Knowledge Editor
+- support for DBNs in QGeNIe
+- support for single column text data files
+- added basic framework for continous variables/equations
+
+
+[Release: 2.0.2603.0, February 16, 2007]
+- "Examine Temporal Beliefs" option added in the "Network" menu
+- changes and fixes in QGeNIe
+
+
+[Release: 2.0.2594.0, February 07, 2007]
+- full support for noisyMAX and deterministic nodes in DBNs
+- fixed bug in relevance layer
+- improved robustness in diagnosis and clustering 
+
+
+[Release: 2.0.2561.0, January 05, 2007]
+- drag'n'drop support for DBNs 
+- copy/paste support for DBNs
+- minor DBN bugfixes
+
+
+[Release: 2.0.2552.0, December 27, 2006]
+
+- fixed bug in DSL_cpt::RemoveState
+
+
+[Release: 2.0.2545.0, December 20, 2006]
+- P(e) correctly calculated for DBNs
+- minor DBN bugfixes
+- new structure learning algorithm (essential graph search)
+- redesigned structure learning dialog, remembers algorithm and parameter selection
+- updated help file
+
+
+[Release: 2.0.2522.0, November 27, 2006]
+- DBN support, activate through "Enable Temporal Plate" option in "Network" menu
+- improved network/data match dialog
+- improved P(e) dialog
+- improved annealed map dialog
+- multiple bugfixes and minor improvements in data module
+- added customization for active grid cell color in "Options" property sheet
+- added highligh color to active cell in data/spreadsheet views
+- added more statistics to "Summary" page in network properties
+- warning icon correctly displayed for non-normalized leak column in noisy definition grid
+
+
+[Release: 2.0.2403.0, July 31, 2006]
+- fixed EM bug introduced in 2.0.2400.0
+- more updates in help file
+
+
+[Release: 2.0.2400.0, July 28, 2006]
+- probablity of evidence available from toolbar and "Network" menu
+- improved EM performance
+- improved load performance for very large CPTs
+- improved response time after formatting large number of objects
+- improved help file
+- evidence indicator on the status bar shows number of propagated evidence nodes
+- right-click with Ctrl/Shift on the evidence indicator displays menu with real/propagated evidence only
+- tooltip displayed for question mark node widget shows outcome names
+- fixed bug problem with propagated evidence not cleared after controlling value
+- fixed arc placement after moving nodes to different submodel
+
+
+[Release: 2.0.2337.0, May 26, 2006]
+- discretization works with multiple selected columns
+- evidence state shown as bold in barchart node view
+- "QuickBars" added to node definition/value grids; press Ctrl+Q or click "0...1" button on the toolbar to enable it
+- piechart option added to node value page
+- improved time series display
+- fixed crash in structure learning code
+
+
+[Release: 2.0.2322.0, May 11, 2006]
+- added "QuickStates" feature: press Shift when creating a node to select its states from a predefined list
+- added "Fit selection" in zoom combo box
+- node value grid marks impossible entries red in influence diagrams
+- fixed crash during node deletion
+
+
+[Release: 2.0.2302.0, April 21, 2006]
+- fixed crashes after some node type changes
+- fixed crash after Obsfuscate command invoked
+- added "Remove diagnostic attributes" option to Obfuscate dialog
+
+
+[Release: 2.0.2263.0, March 13, 2006]
+- fixed crashing bug in knowledge editor window
+- improved heuristics for time series scaling
+
+
+[Release: 2.0.2258.0, March 08, 2006]
+- fixed bug in NaiveBayes learning entrypoint
+- fixed piechart display bug affecting very narrow slices
+- new button: "Apply to" in "Format" page of arc properties
+- double click on arc line opens arc properties
+- removed unnecessary error messages generated by .dsl parser when reading IDs
+
+
+[Release: 2.0.2250.0, February 28, 2006]
+- error message in output pane when UpdateBelief fails
+- improved messages for failures in AddArc
+- output pane cleared when last network is closed
+- added randomization option to EM dialog
+- better memory management in EM
+- structure learning dialog remembers last column selection
+- improved text parser probe logic
+- improved piechart dialog
+- improved ODBC import dialog
+- double click on arc head locates parent node
+- splash not faded in Remote Desktop sessions
+- Ctrl+A selects all items in checklist controls
+- DeMorgan nodes in QGeNIe 
+
+
+[Release: 2.0.2217.0, January 26, 2006]
+- case management window 
+- new menu command: Edit|Select Evidence Nodes
+- new menu command: Network|Learn Parameters
+- new menu command: Data|Copy Cases
+- new button: "Open in GeNIe" when data generation is complete
+- cancel UI for parameter learning
+- circular layout for networks generated by Naive Bayes algorithm
+- text parser changed to accept missing value placeholders (like "*"). The list of placeholders is at "General" page in program options
+- text parser fixed to handle leading spaces in comma-separated files
+- data file generator has an option for adding user-defined amount of missing values to the output
+
+[changelog started at January 2, 2006]

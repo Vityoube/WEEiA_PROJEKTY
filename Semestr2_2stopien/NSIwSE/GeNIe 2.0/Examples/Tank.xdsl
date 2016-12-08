@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Sub0" numsamples="1000">
+	<nodes>
+		<cpt id="Oxigen">
+			<state id="present" />
+			<state id="absent" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Hydrogen">
+			<state id="presen" />
+			<state id="absent" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="ReacO">
+			<state id="yes" />
+			<state id="no" />
+			<parents>Oxigen</parents>
+			<probabilities>0.1 0.9 0 1</probabilities>
+		</cpt>
+		<cpt id="ReacH">
+			<state id="yes" />
+			<state id="no" />
+			<parents>Hydrogen</parents>
+			<probabilities>0.1 0.9 0 1</probabilities>
+		</cpt>
+		<cpt id="Sensor1">
+			<state id="on" />
+			<state id="off" />
+			<parents>Oxigen Hydrogen</parents>
+			<probabilities>0.9 0.1 0.1 0.9 0.1 0.9 0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="Explosion">
+			<state id="yes" />
+			<state id="no" />
+			<parents>Oxigen Hydrogen</parents>
+			<probabilities>0.9 0.1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Sensor2">
+			<state id="on" />
+			<state id="off" />
+			<parents>Oxigen</parents>
+			<probabilities>0.9 0.1 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="C_Oxigen">
+			<state id="present" />
+			<state id="absent" />
+			<parents>Oxigen Explosion ReacO</parents>
+			<probabilities>0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="C_Hydrogen">
+			<state id="present" />
+			<state id="absent" />
+			<parents>Hydrogen ReacH Explosion</parents>
+			<probabilities>0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="C_ReacO">
+			<state id="yes" />
+			<state id="no" />
+			<parents>C_Oxigen</parents>
+			<probabilities>0.1 0.9 0 1</probabilities>
+		</cpt>
+		<cpt id="C_ReacH">
+			<state id="yes" />
+			<state id="no" />
+			<parents>C_Hydrogen</parents>
+			<probabilities>0.1 0.9 0 1</probabilities>
+		</cpt>
+		<cpt id="C_Sensor1">
+			<state id="on" />
+			<state id="off" />
+			<parents>C_Oxigen C_Hydrogen</parents>
+			<probabilities>0.9 0.1 0.1 0.9 0.1 0.9 0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="C_Sensor2">
+			<state id="on" />
+			<state id="off" />
+			<parents>C_Oxigen</parents>
+			<probabilities>0.9 0.1 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="C_Explosion">
+			<state id="yes" />
+			<state id="no" />
+			<parents>C_Oxigen C_Hydrogen</parents>
+			<probabilities>0.9 0.1 0 1 0 1 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" name="Tank problem diagnosis by Gerardina Hernandez" faultnameformat="nodestate">
+			<comment>A simple network for diagnosing possible explosion in a tank, developed by Gerardina Hernandez as a class homework at the University of Pittsburgh.</comment>
+			<node id="Oxigen">
+				<name>Oxigen</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>8 11 78 41</position>
+			</node>
+			<node id="Hydrogen">
+				<name>Hydrogen</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>97 12 167 42</position>
+			</node>
+			<node id="ReacO">
+				<name>ReacO</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>150 108 220 138</position>
+			</node>
+			<node id="ReacH">
+				<name>ReacH</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>275 59 345 89</position>
+			</node>
+			<node id="Sensor1">
+				<name>Sensor1</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>80 129 150 159</position>
+			</node>
+			<node id="Explosion">
+				<name>Explosion</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>245 120 315 150</position>
+			</node>
+			<node id="Sensor2">
+				<name>Sensor2</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>9 96 79 126</position>
+			</node>
+			<node id="C_Oxigen">
+				<name>C_Oxigen</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>173 181 243 211</position>
+			</node>
+			<node id="C_Hydrogen">
+				<name>C_Hydrogen</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>349 139 434 169</position>
+			</node>
+			<node id="C_ReacO">
+				<name>C_ReacO</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>193 250 263 280</position>
+			</node>
+			<node id="C_ReacH">
+				<name>C_ReacH</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>422 220 492 250</position>
+			</node>
+			<node id="C_Sensor1">
+				<name>C_Sensor1</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>297 205 367 235</position>
+			</node>
+			<node id="C_Sensor2">
+				<name>C_Sensor2</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>275 266 345 296</position>
+			</node>
+			<node id="C_Explosion">
+				<name>C_Explosion</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>362 268 449 298</position>
+			</node>
+			<textbox>
+				<caption>A simple network for diagnosing possible explosion in a tank, developed by Gerardina Hernandez as a class homework at the University of Pittsburgh.</caption>
+				<font color="3366ff" name="Arial" size="10" bold="true" />
+				<position>12 167 185 279</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

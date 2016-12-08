@@ -1,0 +1,18 @@
+Welcome to GeNIe, a development environment for building decision-theoretic
+models. GeNIe has been developed in the Decision Systems Laboratory at the
+University of Pittsburgh.
+
+The programs are made available in a compiled form, free of charge for any
+use (this permission includes explicitly potential commercial use).
+
+Even though we are making GeNIe and SMILE available to the community, the
+programs and all accompanying graphics and manuals are copyrighted by the
+Decision Systems Laboratory, University of Pittsburgh, and cannot be copied
+or distributed without our explicit permission. The only legal way of
+obtaining the programs or any of their components is directly from the
+Decision Systems Laboratory, for example by downloading them from our WWW
+pages. We require that interested individuals contact us directly or visit
+our web site for the most recent copy of the programs. This ensures the
+quality and completeness of the programs and accompanying manuals. It also
+allows us to keep track of who is using the programs and to notify the
+users about updates and new releases.
