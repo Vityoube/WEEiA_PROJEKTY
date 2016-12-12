@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable{
+public class Controller implements Initializable {
 
     @FXML
     private Button loginButton;
