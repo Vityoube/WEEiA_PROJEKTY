@@ -425,7 +425,7 @@
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>send_message</text>
@@ -499,7 +499,7 @@
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>send_acknowledge</text>
@@ -573,7 +573,7 @@
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>start_program</text>
@@ -647,7 +647,7 @@
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>call_transporter</text>
@@ -721,7 +721,7 @@
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>call_transporter</text>
@@ -1133,21 +1133,6 @@
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10001.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10011.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10005.enable">
         <value>
           <boolean>true</boolean>
@@ -1158,7 +1143,7 @@
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10007.enable">
+      <option name="extensions.10001.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -1168,24 +1153,9 @@
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10004.enable">
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10008.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10011.options.disable">
-        <value>
-          <boolean>false</boolean>
-        </value>
-      </option>
-      <option name="extensions.10007.options.discover">
-        <value>
-          <boolean>false</boolean>
         </value>
       </option>
       <option name="repavg">
@@ -1392,7 +1362,7 @@
                  height="696">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="685.000000"
+                    panx="582.000000"
                     pany="128.000000"
                     zoom="1.000000"
                     instance="ID2149">
@@ -1470,21 +1440,9 @@
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-        </IndexNode>
-        <IndexNode expanded="false">
-          <IndexNode expanded="false"/>
-        </IndexNode>
-        <IndexNode expanded="false">
-          <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
+      <IndexNode expanded="false"/>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>

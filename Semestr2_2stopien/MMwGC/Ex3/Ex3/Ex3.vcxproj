@@ -88,13 +88,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>F:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\glut;F:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\FreeImage\Dist\x32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\freeglut\include;C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\FreeImage\Dist\x32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>F:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\glut;F:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\FreeImage\Dist\x32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glut32.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\freeglut\lib;C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\FreeImage\Dist\x32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;freeglut.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -104,10 +104,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\freeglut\include;C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\FreeImage\Dist\x32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\freeglut\lib;C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\FreeImage\Dist\x32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;freeglut.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -119,15 +122,15 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>F:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\glut;F:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\FreeImage\Dist\x32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\freeglut\include;C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\FreeImage\Dist\x32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>F:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\glut;F:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\FreeImage\Dist\x32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glut32.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\freeglut\lib;C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\FreeImage\Dist\x32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;freeglut.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -139,12 +142,15 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\freeglut\include;C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\FreeImage\Dist\x32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\freeglut\lib;C:\WEEiA_PROJEKTY\Semestr2_2stopien\MMwGC\Ex3\FreeImage\Dist\x32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;freeglut.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
