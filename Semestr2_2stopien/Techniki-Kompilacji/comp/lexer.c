@@ -468,7 +468,7 @@ char *yytext_ptr;
 #line 6 "lexer.l"
   #include "global.h"
   #include "math.h"
-  #define YY_DECL int lexan()
+  #define YYSTYPE int_type 
   char lexbuf[BSIZE];
   int lineno = 1;
   int tokenval=NONE;
@@ -781,8 +781,8 @@ YY_RULE_SETUP
                   p=lookup(yytext);
                   if (p==0)
                     p=insert(yytext,ID);
-                  tokenval=p;
-                  return symtable[p].token;
+                  yylval.int_type=p;
+                  return symtable[yylval.int_type].token;
                 }
 	YY_BREAK
 case YY_STATE_EOF(INITIAL):
@@ -797,8 +797,8 @@ YY_RULE_SETUP
           p=lookup(yytext);
           if (p==0)
             p=insert(yytext,DIV);
-          tokenval=p;
-          return symtable[p].token;
+          yylval.int_type=p;
+          return symtable[yylval.int_type].token;
       }
 	YY_BREAK
 case 6:
@@ -808,15 +808,15 @@ YY_RULE_SETUP
         p=lookup(yytext);
         if (p==0)
           p=insert(yytext,MOD);
-        tokenval=p;
-        return symtable[p].token;
+        yylval.int_type=p;
+        return symtable[yylval.int_type].token;
       }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
 #line 49 "lexer.l"
 {
-    tokenval = NONE;
+    yylval.int_type=p;
     return yytext[yyleng-1];
   }
 	YY_BREAK

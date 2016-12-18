@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-
+#include "parser.h"
 #define BSIZE 128
 #define NONE -1
-#define EOS '\0'
-#define NUM 256
-#define DIV 257
-#define MOD 258
-#define ID  259
+// #define EOS '\0'
+// #define NUM 256
+// #define DIV 257
+// #define MOD 258
+// #define ID  259
 #define DONE 260
 extern int tokenval;
 extern int lineno;
@@ -20,11 +20,11 @@ struct entry
 };
 extern struct entry symtable[];
 int insert (char s[], int tok);
-void error (char *m) ;
+void yyerror (char *m) ;
 int lookup (char s[]) ;
 void init () ;
-void parse () ;
-int lexan () ;
+int yyparse (void) ;
+int yylex () ;
 void expr () ;
 void term () ;
 void factor () ;

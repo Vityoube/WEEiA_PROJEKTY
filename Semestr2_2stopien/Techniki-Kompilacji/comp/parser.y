@@ -5,64 +5,46 @@
 	char  * str_type;
 	int int_type;
 }
-%token <str_type> T_DIV "div"
-%token <str_type>T_MOD "mod"
-%token <int_type> T_NUM
-%token <str_type> T_ID
-%token E_O_F 0
-%token <int_type> '+' '-' '/' '*'
-%left '+' '-'
-%left '/' '*' T_DIV T_MOD
-%left '(' ')'
+%defines
+%token <str_type> DIV 'div'
+%token <str_type> MOD 'mod'
+%token <int_type> NUM 
+%token <int_type> ID
+%token DONE 0
+%token <str_type> '+' '-' '/' '*'
 %%
-sequ:  expr ';'      { YYACCEPT; }
-      | E_O_F          { YYACCEPT; }
+sequ:  expr ';'      { return DONE; }
+      | ';'          { return DONE; }
       | error { yyerror("syntax error (match)"); }
 expr: /* empty */
-    | term '+' term {
-                        yychar=yylex();
-                        emit($2, NONE);
+    | expr '+' term	 {
+                        emit('+', NONE);
                      }
-    | term '-' term {
-                      yychar=yylex();
-                      emit($2, NONE);
+    | expr '-' term {
+                      emit('-', NONE);
                     }
+    | term	    { }
     | error { yyerror("syntax error (match)"); }
 ;
-term: factor '*' factor {
-                          yychar=yylex();
-                          emit($2, NONE);
+term: term '*' factor {
+                          emit('*', NONE);
                          }
-    | factor '/' factor {
-                              yychar=yylex();
-                              emit($2, NONE);
+    | term '/' factor {
+                              emit('/', NONE);
                          }
-    | factor T_DIV factor {
-                              yychar=yylex();
-                              emit($2, NONE);
+    | term DIV factor {
+                              emit(DIV, NONE);
                              }
-    | factor T_MOD factor {
-                              yychar=yylex();
-                              emit($2, NONE);
+    | term MOD factor {
+                              emit(MOD, NONE);
                            }
+    | factor		{}
     | error { yyerror("syntax error (match)"); }
 ;
-factor: '(' expr ')'  { yychar=yylex(); }
-      | T_NUM           { emit(NUM, yylval.int_type); }
-      | T_ID            { emit (ID, yylval.int_type); }
+factor: '(' expr ')'  { }
+      | NUM           { emit(NUM, $1); }
+      | ID            { emit (ID, $1); }
       | error         { yyerror ("syntax error (factor)"); }
 ;
 %%
 
-void parse(){
-  yychar=yylex();
-  yyparse();
-}
-
-int yylex(void){
-	return lexan();
-}
-
-void yyerror(char const *s){
-	error(s);
-}
