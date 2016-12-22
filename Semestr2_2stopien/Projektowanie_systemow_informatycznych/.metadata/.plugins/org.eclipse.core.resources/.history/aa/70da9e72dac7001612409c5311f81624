@@ -1,0 +1,59 @@
+package com.theopentutorials.jdbc.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.theopentutorials.jdbc.db.ConnectionFactory;
+import com.theopentutorials.jdbc.db.DbUtil;
+import com.theopentutorials.jdbc.to.Employee;
+
+public class EmployeeDAO {
+	private Connection connection;
+	private Statement statement;
+
+	public EmployeeDAO() {
+	}
+
+	public Employee getEmployee(int employeeId) throws SQLException {
+
+		String query = "SELECT * FROM Employee WHERE emp_id=" + employeeId;
+		ResultSet rs = null;
+
+		Employee employee = null;
+
+		try {
+
+			connection = ConnectionFactory.getConnection();
+
+			statement = connection.createStatement();
+
+			rs = statement.executeQuery(query);
+			if (rs.next()) {
+
+				employee = new Employee();
+
+				employee.setEmpId(rs.getInt("emp_id"));
+
+				employee.setEmpName(rs.getString("emp_name"));
+
+				employee.setDob(rs.getDate("dob"));
+				employee.setSalary(rs.getDouble("salary"));
+
+				employee.setDeptId((rs.getInt("dept_id")));
+
+			}
+
+		} finally {
+
+			DbUtil.close(rs);
+
+			DbUtil.close(statement);
+			DbUtil.close(connection);
+
+		}
+
+		return employee;
+	}
+}

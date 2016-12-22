@@ -1,0 +1,5 @@
+package com.theopentutorials.jdbc.main;
+
+public class SelectDemo {
+
+}
