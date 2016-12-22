@@ -1,7 +1,7 @@
 #include "global.h"
 
 void
-error (char *m) 
+yyerror (char *m) 
 {
   fprintf (stderr, "line%d:%s\n", lineno, m);
   exit (1);

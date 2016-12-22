@@ -39,7 +39,7 @@ void drawBlueTriangles(){
 	//Blue
 	glPushMatrix();
 	rotateTriangle(triangleLength / 3, triangleLength / 3,blueTriangleRotateAngle);
-	glTranslatef(move_bX, move_bY,0.0f);
+	glTrslanatef(move_bX, move_bY,0.0f);
 	drawTriangle(0.0f, 0.0f, triangleLength, 0.0f, 0.0f, triangleLength, 0.0f, 0.0f, 1.0f);
 	glPopMatrix(); 
 

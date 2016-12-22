@@ -23,7 +23,7 @@
 
         function init()
         {
-
+          worker = new Worker("worker_home.js");
 
             console.log("Document initialized properly");
 
@@ -81,7 +81,7 @@
                         //draw Image
 						var steps = Math.ceil(Math.log(img.width / canvas.width)/Math.log(2));
 						console.log(steps);
-                        worker = new SharedWorker("worker_home.js");
+
                         if (steps < 2)
                         {
                         	ctx.drawImage(img,0,0);
@@ -98,14 +98,32 @@
 
               ctx.drawImage(offscreenCanvas, 0,0, offscreenCanvas.width*0.5, offscreenCanvas.height*0.5, 0,0, canvas.width, canvas.height);
                         }
-                        worker.postMessage(img);
+                        worker.postMessage([canvas.height,canvas.width]);
+                        worker.postMessage([canvas.height,canvas.width]);
+                        worker.postMessage([canvas.height,canvas.width]);
+                        worker.postMessage([canvas.height,canvas.width]);
+                        worker.postMessage([canvas.height,canvas.width]);
+                        worker.postMessage([canvas.height,canvas.width]);
+                        worker.postMessage([canvas.height,canvas.width]);
+                        worker.postMessage([canvas.height,canvas.width]);
+                        worker.postMessage([canvas.height,canvas.width]);
+                        worker.postMessage([canvas.height,canvas.width]);
                         worker.addEventListener('message',messageFromWorker,false);
 
                         function messageFromWorker(e){
+                            ctx.save();
+                            ctx.beginPath();
                             ctx.fillStyle="yellow";
-                            ctx.arc(e.x,e.y,e.r,0,Math.PI*2,false);
+                            var circleProperties=e.data;
+                            console.log("Received message from worker: "+circleProperties);
+                            var x=circleProperties[0];
+                            var y=circleProperties[1];
+                            var radius=circleProperties[2];
+                            ctx.arc(x,y,radius,0,Math.PI*2,false);
+                            ctx.stroke();
                             ctx.fill();
-                            console.log(ctx);
+                            ctx.endPath();
+                            ctx.restore();
                         }
 
 

@@ -1,9 +1,9 @@
 #include "global.h"
 void
-emit (int t, int tval) 
+emit (int t, int tval)
 {
   switch (t)
-    
+
     {
     case '+':
     case '-':
@@ -27,5 +27,3 @@ emit (int t, int tval)
       printf ("token %d , tokenval %d\n", t, tval);
     }
 }
-
-

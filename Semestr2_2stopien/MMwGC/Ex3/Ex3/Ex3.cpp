@@ -1,19 +1,19 @@
 // Ex3.cpp : Defines the entry point for the console application.
 //
 #include "stdafx.h"
-#include <iostream>
-#include "GL\freeglut.h"
-#include "FreeImage.h"
-
-double graphicLeft = 0.0, graphicRight = 100.0, graphicTop = 100.0, graphicBottom = -100.0, graphicNear = 2.0, graphicFar = 25.0;
-GLdouble sphereRadius=20.0;
-GLuint sphereSlices = 100, sphereStacks = 100;
-GLuint textureID;
+#include "Spring.h"
+#include "Sphere.h"
 
 
 using namespace std;
+GLuint texture_id;
 
-void loadTexture(const char * filename) {
+static Spring spring;
+static Sphere sphere;
+
+double graphicLeft = 0.0, graphicRight = 100.0, graphicTop = 100.0, graphicBottom = -100.0, graphicNear = 2.0, graphicFar = 25.0;
+
+GLuint load_texture(const char* filename) {
 	FIBITMAP * bitmap = NULL;
 	int x, y;
 	RGBQUAD rgbquad;
@@ -37,31 +37,29 @@ void loadTexture(const char * filename) {
 			texels[(y*scanLineWidh + 3 * x) + 2] = ((GLubyte*)&rgbquad)[0];
 		}
 
-		glGenTextures(1, &textureID);
-		glBindTexture(GL_TEXTURE_2D, textureID);
+	glGenTextures(1, &texture_id);
+	glBindTexture(GL_TEXTURE_2D, texture_id);
 
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB,
-			imageWidth, imageHeight, 0, GL_RGB,
-			GL_UNSIGNED_BYTE, texels);
-		free(texels);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB,
+		imageWidth, imageHeight, 0, GL_RGB,
+		GL_UNSIGNED_BYTE, texels);
+	free(texels);
+	return texture_id;
 }
-
 void initWindow(int width, int height) {
-	loadTexture("wood.jpg");
+	texture_id = load_texture("wood.jpg");
 	const float ar = (float)width / (float)height;
 	graphicLeft = -ar * 100;
 	graphicRight = ar * 100;
-	glClearColor(0.0, 0.0, 0.0, 0.0);
+	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glViewport(0, 0, width, height);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	glFrustum(graphicLeft, graphicRight, graphicBottom, graphicTop, graphicNear, graphicFar);
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
 	glEnable(GL_DEPTH);
 	glDepthFunc(GL_LEQUAL);
 	glEnable(GL_TEXTURE_2D);
@@ -73,7 +71,7 @@ void resizeWindow( int width, int height) {
 	const float ar = (float)width / (float)height;
 	graphicLeft = -ar * 100;
 	graphicRight = ar * 100;
-	glClearColor(0.0, 0.0, 0.0, 0.0);
+	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glViewport(0,0,width,height);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
@@ -90,14 +88,10 @@ void resizeWindow( int width, int height) {
 void renderScene() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();	
-	glTranslated(0.0, 0.0, -2.0);
-	glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
-	glutSolidSphere(sphereRadius, sphereSlices, sphereStacks);
-	glTexGenf(GL_S, GL_TEXTURE_GEN_MODE, GL_SPHERE_MAP);
-	glTexGenf(GL_T, GL_TEXTURE_GEN_MODE, GL_SPHERE_MAP);
-	glBindTexture(GL_TEXTURE_2D, textureID);
-	glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);
+	glLoadIdentity();
+	sphere.set_texture(texture_id);
+	sphere.draw();
+	spring.draw();	
 	glutSwapBuffers();
 }
 
