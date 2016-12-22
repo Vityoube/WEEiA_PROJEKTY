@@ -1,0 +1,5 @@
+package com.theopentutorials.dao;
+
+public class EmployeeDAO {
+
+}

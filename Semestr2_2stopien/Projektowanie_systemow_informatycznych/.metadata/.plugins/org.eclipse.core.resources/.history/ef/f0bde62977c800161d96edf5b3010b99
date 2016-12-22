@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>PaginationInServlet</display-name>
+  <welcome-file-list>
+  	<welcome-file>displayEmployee.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>EmployeeServlet</servlet-name>
+  	<servlet-class>com.theopentutorials.servlets.EmployeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EmployeeServlet</servlet-name>
+  	<url-pattern>/employee.do</url-pattern>
+  </servlet-mapping>
+</web-app>

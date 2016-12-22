@@ -1,0 +1,13 @@
+127.0.0.1 - - [22/Dec/2016:21:26:14 +0100] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [22/Dec/2016:21:26:16 +0100] "GET /PostRedirectGet/ HTTP/1.1" 200 787
+0:0:0:0:0:0:0:1 - - [22/Dec/2016:21:26:33 +0100] "POST /PostRedirectGet/employee.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Dec/2016:21:26:33 +0100] "GET /PostRedirectGet/displayEmployee.do?s=1 HTTP/1.1" 200 842
+0:0:0:0:0:0:0:1 - - [22/Dec/2016:21:26:35 +0100] "POST /PostRedirectGet/employee.do HTTP/1.1" 500 1696
+0:0:0:0:0:0:0:1 - - [22/Dec/2016:21:26:42 +0100] "POST /PostRedirectGet/employee.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Dec/2016:21:26:42 +0100] "GET /PostRedirectGet/displayEmployee.do?s=1 HTTP/1.1" 200 842
+0:0:0:0:0:0:0:1 - - [22/Dec/2016:21:26:57 +0100] "POST /PostRedirectGet/employee.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Dec/2016:21:26:57 +0100] "GET /PostRedirectGet/displayEmployee.do?s=1 HTTP/1.1" 200 842
+0:0:0:0:0:0:0:1 - - [22/Dec/2016:21:26:59 +0100] "POST /PostRedirectGet/employee.do HTTP/1.1" 500 1696
+0:0:0:0:0:0:0:1 - - [22/Dec/2016:21:27:02 +0100] "POST /PostRedirectGet/employee.do HTTP/1.1" 500 1759
+0:0:0:0:0:0:0:1 - - [22/Dec/2016:21:27:06 +0100] "POST /PostRedirectGet/employee.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Dec/2016:21:27:06 +0100] "GET /PostRedirectGet/displayEmployee.do?s=1 HTTP/1.1" 200 842

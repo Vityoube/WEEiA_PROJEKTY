@@ -1,5 +1,4 @@
-INDEX VERSION 1.129+/home/vkalashnykov/Dokumenty/WEEiA_PROJEKTY/Semestr2_2stopien/Projektowanie_systemow_informatycznych/.metadata/.plugins/org.eclipse.jdt.core
-1225123458.index
-4294153362.index
-4057039039.index
-70789933.index
+INDEX VERSION 1.127+C:\WEEiA_PROJEKTY\Semestr2_2stopien\Projektowanie_systemow_informatycznych\.metadata\.plugins\org.eclipse.jdt.core
+1375377324.index
+224604419.index
+3893654866.index

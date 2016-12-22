@@ -1,0 +1,48 @@
+package com.theopentutorials.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import com.theopentutorials.db.ConnectionFactory;
+import com.theopentutorials.db.DbUtil;
+import com.theopentutorials.exception.ApplicationException;
+import com.theopentutorials.to.Employee;
+
+public class EmployeeDAO {
+	DataSource ds;
+
+	public EmployeeDAO(DataSource ds) {
+		this.ds = ds;
+	}
+
+
+	public int addEmployees(Employee employee) throws ApplicationException {
+		Connection connection = null;
+		Statement stmt = null;
+		String query = "insert into employee(emp_name,salary,dept_name) values('" + employee.getEmployeeName() + "',"
+				+ employee.getSalary()+",'"+employee.getDeptName()+"')";
+		int row=-1;
+		try {
+			connection = ds.getConnection();
+			stmt = connection.createStatement();
+			row=stmt.executeUpdate(query);
+		}catch(SQLException e){
+			throw new ApplicationException("Unable to insert data: "+e.getMessage(),e);
+		} finally {
+			DbUtil.close(stmt);
+			DbUtil.close(connection);
+
+		}
+		return list;
+	}
+
+	public int getNoOfRecords() {
+		return noOfRecords;
+	}
+}
