@@ -31,6 +31,12 @@
 		<list key="issueManagementUrl">
 		</list>
 	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="595" key="x"/>
+		<item value="58" key="y"/>
+		<item value="628" key="height"/>
+	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
 			<item value="/home/vkalashnykov/WEEiA_PROJEKTY/Semestr2_2stopien/Projektowanie_systemow_informatycznych"/>
@@ -55,8 +61,22 @@
 			<item value="[name]"/>
 		</list>
 	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Web10"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Web10"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/vkalashnykov/WEEiA_PROJEKTY/Semestr2_2stopien/Projektowanie_systemow_informatycznych/webapp"/>
 			<item value="/home/vkalashnykov/WEEiA_PROJEKTY/Semestr2_2stopien/Projektowanie_systemow_informatycznych/webapp5"/>
 			<item value="/home/vkalashnykov/WEEiA_PROJEKTY/Semestr2_2stopien/Projektowanie_systemow_informatycznych"/>
 		</list>
@@ -71,6 +91,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="org.vkalashnykov.Quick_start"/>
 			<item value="org.vkalashnykov.webapp"/>
 			<item value="org.vkalashnykov.webapp5"/>
 		</list>
@@ -78,6 +99,7 @@
 			<item value="org.vkalashnykov"/>
 		</list>
 		<list key="artifactId">
+			<item value="Quick-start"/>
 			<item value="webapp"/>
 			<item value="webapp5"/>
 		</list>

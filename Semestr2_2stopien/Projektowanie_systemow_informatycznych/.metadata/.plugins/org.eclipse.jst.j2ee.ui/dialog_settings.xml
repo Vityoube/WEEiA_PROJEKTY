@@ -3,6 +3,7 @@
 	<item value="false" key="J2EE_EXPORT_OVERWRITE"/>
 	<item value="true" key="J2EE_EXPORT_SOURCE"/>
 	<list key="MRU_RUNTIME_STORE">
+		<item value="Tomcat9"/>
 		<item value="Tomcat8.5"/>
 		<item value="Apache Tomcat v8.0"/>
 	</list>
