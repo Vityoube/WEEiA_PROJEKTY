@@ -3,80 +3,120 @@
 </style>
 
 <script>
-    var canvas; var w=640; var h=480;
+    var canvas; var width, height;
     var ctx;
 
-    var leftObject = { x: 0, y: 100, r: 50, direction: 1, vx: 0 }
-    var rightObject ={ x: w-100, y: 100, r: 50, direction: -1, vx: 0 }
+    var leftObject = { square_x: 0, square_y: 100, square_length: 100,
+      circle_center_x:50, circle_center_y: 150,  circle_radius: 50,
+      direction: 1, vx: 10, shape: 'square' };
+    var rightObject = { square_x: 0, square_y: 100,  square_length: 100,
+      circle_center_x: 0, cicle_center_y: 150, circle_radius: 50,
+      direction: -1, vx: 10, shape: 'square' };
 
 
     function init(){
       canvas=document.getElementById('field');
       ctx=canvas.getContext('2d');
+      width=canvas.width;
+      height=canvas.height;
+      rightObject.circle_center_x=width-rightObject.circle_radius;
+      rightObject.square_x=width-rightObject.square_length;
     }
 
     setInterval(function(){
-      leftObject.vx=100;
-      rightObject.vx=100;
+      leftObject.vx*=1.002;
+      rightObject.vx*=1.002;
 
-      ctx.clearRect(0,0,w,h);
-      ctx.save();
-
-      ctx.beginPath();
-      var lx=leftObject.x;
-      var rx=rightObject.x;
-      if (leftObject.x>rightObject.x-(2*rightObject.r)){
+      ctx.clearRect(0,0,width,height);
+      // ctx.save();
+      // ctx.beginPath();
+      if (leftObject.shape=='square' && rightObject.shape=='square' && leftObject.square_x+leftObject.square_length>=rightObject.square_x){
+        leftObject.shape='circle';
+        rightObject.shape='circle';
         leftObject.direction=-1;
         rightObject.direction=1;
-        leftObject.vx*=1.002;
-        rightObject.vx*=1.002;
-        lx=leftObject.x+leftObject.r;
-        rx=rightObject.x+(rightObject.r*4);
+        leftObject.vx*=1.0002;
+        rightObject.vx*=1.0002;
+        leftObject.square_x-=leftObject.vx/10;
+        rightObject.square_x+=rightObject.vx/10;
+        leftObject.vx/=1.5;
+        rightObject.vx/=1.5;
+        leftObject.circle_center_x=leftObject.square_x+leftObject.circle_radius;
+        leftObject.circle_center_y=leftObject.square_y+leftObject.circle_radius;
+        rightObject.circle_center_x=rightObject.square_x+rightObject.circle_radius;
+        rightObject.circle_center_y=rightObject.square_y+rightObject.circle_radius;
       }
-      if (lx-leftObject.r<0 ){
+      if (leftObject.shape=='circle' && leftObject.circle_center_x-leftObject.circle_radius<=0){
+        leftObject.shape='square';
         leftObject.direction=1;
-        leftObject.vx*=1.002;
-        lx=leftObject.x;
+        leftObject.vx*=1.0002;
+        leftObject.circle_center_x+=leftObject.vx/10;
+        leftObject.vx/=1.5;
+        leftObject.square_x=leftObject.circle_center_x-leftObject.circle_radius;
+        leftObject.square_y=leftObject.circle_center_y-leftObject.circle_radius;
       }
-      if ( rx>w-2*rightObject.r){
+      if (rightObject.shape=='circle' && rightObject.circle_center_x+rightObject.circle_radius>=width){
+        rightObject.shape='square';
         rightObject.direction=-1;
-        rightObject.vx*=1.002;
-        rx=rightObject.x;
+        rightObject.vx*=1.0002;
+        rightObject.circle_center_x-=rightObject.vx/10;
+        rightObject.vx/=1.5;
+        rightObject.square_x=rightObject.circle_center_x-rightObject.circle_radius;
+        rightObject.square_y=rightObject.circle_center_y-rightObject.circle_radius;
       }
-        if (leftObject.direction==-1){
+
+        if (leftObject.shape=='circle'){
+          ctx.save();
+          ctx.beginPath();
           ctx.fillStyle="yellow";
           ctx.shadowColor="#a89f28";
           ctx.shadowBlur="30";
-          ctx.arc(lx,100,leftObject.r,0,2*Math.PI,true);
-
+          ctx.arc(leftObject.circle_center_x,leftObject.circle_center_y,leftObject.circle_radius,0,2*Math.PI,true);
+          ctx.fill();
+          ctx.closePath();
+          ctx.restore();
         }
-        if (rightObject.direction==1){
+
+        if (rightObject.shape=='circle'){
+          ctx.save();
+          ctx.beginPath();
           ctx.fillStyle="yellow";
           ctx.shadowColor="#a89f28";
           ctx.shadowBlur="30";
-          ctx.arc(rx,100,rightObject.r,0,2*Math.PI,true);
+          ctx.arc(rightObject.circle_center_x,rightObject.circle_center_y,rightObject.circle_radius,0,2*Math.PI,true);
+          ctx.fill();
+          ctx.closePath();
+          ctx.restore();
         }
-        if (leftObject.direction==1){
+
+        if (leftObject.shape=='square'){
+          ctx.save();
+          ctx.beginPath();
           ctx.fillStyle="rgba(0,255,0,1)";
           ctx.shadowColor="#5aaa2c";
           ctx.shadowBlur="30";
-          ctx.rect(lx,100-leftObject.r,leftObject.r*2,leftObject.r*2);
+          ctx.rect(leftObject.square_x,leftObject.square_y,leftObject.square_length,leftObject.square_length);
+          ctx.fill();
+          ctx.closePath();
+          ctx.restore();
         }
-        if (rightObject.direction==-1){
+
+        if (rightObject.shape=='square'){
+          ctx.save();
+          ctx.beginPath();
           ctx.fillStyle="rgba(0,255,0,1)";
           ctx.shadowColor="#5aaa2c";
           ctx.shadowBlur="30";
-          ctx.rect(rx,100-rightObject.r,rightObject.r*2,rightObject.r*2);
+          ctx.rect(rightObject.square_x,rightObject.square_y,rightObject.square_length,rightObject.square_length);
+          ctx.fill();
+          ctx.closePath();
+          ctx.restore();
         }
-        leftObject.x+=leftObject.direction*(leftObject.vx)*(30/1000);
-        rightObject.x+=rightObject.direction*(rightObject.vx)*(30/1000);
-      ctx.closePath();
-      ctx.fill();
-
-      ctx.restore();
-
-
-    },2);
+        leftObject.square_x+=leftObject.direction*(leftObject.vx)*(30/1000);
+        leftObject.circle_center_x+=leftObject.direction*(leftObject.vx)*(30/1000);
+        rightObject.square_x+=rightObject.direction*(rightObject.vx)*(30/1000);
+        rightObject.circle_center_x+=rightObject.direction*(rightObject.vx)*(30/1000);
+    },10);
 
 
 
@@ -84,5 +124,5 @@
 </script>
 
 
-<canvas id="field" height="480" width="640">
+<canvas id="field" height="500" width="500">
 </canvas>
