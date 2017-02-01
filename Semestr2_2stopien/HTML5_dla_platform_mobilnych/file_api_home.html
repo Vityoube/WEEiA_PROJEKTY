@@ -98,16 +98,11 @@
 
               ctx.drawImage(offscreenCanvas, 0,0, offscreenCanvas.width*0.5, offscreenCanvas.height*0.5, 0,0, canvas.width, canvas.height);
                         }
-                        worker.postMessage([canvas.height,canvas.width]);
-                        worker.postMessage([canvas.height,canvas.width]);
-                        worker.postMessage([canvas.height,canvas.width]);
-                        worker.postMessage([canvas.height,canvas.width]);
-                        worker.postMessage([canvas.height,canvas.width]);
-                        worker.postMessage([canvas.height,canvas.width]);
-                        worker.postMessage([canvas.height,canvas.width]);
-                        worker.postMessage([canvas.height,canvas.width]);
-                        worker.postMessage([canvas.height,canvas.width]);
-                        worker.postMessage([canvas.height,canvas.width]);
+                        var left_border_x=canvas.width/4, right_border_x=3*canvas.width/4,
+                        upper_border_y=canvas.height/4, bottom_border_y=3*canvas.height/4;
+                        var radius=(canvas.width+canvas.height)/32;
+                        for (var i=0;i<100;i++)
+                          worker.postMessage([left_border_x,right_border_x,upper_border_y,bottom_border_y,radius,canvas.width,canvas.height]);
                         worker.addEventListener('message',messageFromWorker,false);
 
                         function messageFromWorker(e){
@@ -122,7 +117,14 @@
                             ctx.arc(x,y,radius,0,Math.PI*2,false);
                             ctx.stroke();
                             ctx.fill();
-                            ctx.endPath();
+                            ctx.closePath();
+                            ctx.restore();
+
+                            ctx.save();
+                            ctx.beginPath();
+                            ctx.strokeStyle="black";
+                            ctx.strokeRect(left_border_x,upper_border_y,right_border_x-left_border_x,bottom_border_y-upper_border_y);
+                            ctx.closePath();
                             ctx.restore();
                         }
 
